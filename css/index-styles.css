@@ -58,3 +58,27 @@
     background-color: #AEC3F3;
     border-radius: 20px;  
 }
+
+/* Sharing Styles */
+
+#share_socialmedia article {
+    display: flex;
+    justify-content: center;
+}
+
+.social_media {
+    margin: 5px;
+    padding: 5px 10px;
+    width: 140px;
+    color: white;
+    border-radius: 10px;
+}
+
+.social_media i {
+    padding-right: 5px;
+}
+
+.social_media:hover {
+    color: white;
+    text-decoration: none;
+}
