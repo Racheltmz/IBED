@@ -53,6 +53,13 @@
     border-left: 6px solid rgb(102, 102, 102);
 }
 
+/* Speakers Styles */
+
+.speakers_details img {
+    width: 220px;
+    height: 245px;
+}
+
 /* Schedule Styles */
 
 #schedule {
