@@ -17,6 +17,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="../javascript/index.js" defer></script>
 
     <!-- CSS Code -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -60,8 +61,8 @@
     <section class="container-fluid p-5" id="introduction">
         <h1 class="text-center">Ecology and Sustainability</h1>
         <div class="d-flex justify-content-center align-items-center p-3">
-            <video class="col-lg-8 col-12" controls>
-                <source src="#">
+            <video class="col-lg-8 col-12" controls id="intro_video">
+                <source src="#" type="video/mp4">
             </video>
         </div>
         <div class="button_link">
@@ -111,19 +112,19 @@
     <section class="container p-5" id="speakers">
         <h1 class="text-center pb-3">Speakers</h1>
         <article class="row text-center font-weight-bold speakers_details">
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
                 <img src="../assets/speakers/ProfessorDatuk.jpg" />
                 <p>Professor Datuk Dr Azizan bt Baharudin</p>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
                 <img src="../assets/speakers/ProfessorDhammajothi.jpg" />
                 <p>Professor Datuk Dr Azizan bt Baharudin</p>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
                 <img src="../assets/speakers/DrOsman.jpg" />
                 <p>Emeritus Professor Datuk Dr Osman Bakar</p>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
                 <img src="../assets/speakers/VenerableDhammananda.jpg" />
                 <p>Venerable Bhikkhuni Dr Dhammananda </p>
             </div>
@@ -137,7 +138,7 @@
     <section class="container-fluid p-5" id="schedule">
         <h1 class="text-center pb-3">Schedule</h1>
         <article class="row" id="sessions">
-            <article class="col-md-6" id="day1">
+            <article class="col-lg-6 col-12 schedule_details" id="day1">
                 <div class="date_day">
                     <h3>Day 1</h3>
                     <h5>18 December 2021, Saturday</h5>
@@ -149,7 +150,7 @@
                     <p class="col-sm-4">Vulnerability & Sustainability of Planet Earth</p>
                 </div>
             </article>
-            <article class="col-md-6" id="day2">
+            <article class="col-lg-6 col-12 schedule_details" id="day2">
                 <div class="date_day">
                     <h3>Day 2</h3>
                     <h5>19 December 2021, Sunday</h5>
@@ -167,22 +168,22 @@
     <section class="container p-3" id="share_socialmedia">
         <h3 class="text-center">Share on Social Media</h3>
         <article class="row">
-            <a href="#" class="social_media" id="facebook">
+            <a href="#" class="col-md-2 col-4 social_media" id="facebook">
                 <i class="fab fa-facebook"></i>
                 <span>Facebook</span>
             </a>
 
-            <a href="#" class="social_media" id="whatsapp">
+            <a href="#" class="col-md-2 col-4 social_media" id="whatsapp">
                 <i class="fab fa-whatsapp"></i>
                 <span>WhatsApp</span>
             </a>
 
-            <a href="#" class="social_media" id="twitter">
+            <a href="#" class="col-md-2 col-4 social_media" id="twitter">
                 <i class="fab fa-twitter"></i>
                 <span>Twitter</span>
             </a>
 
-            <a href="#" class="social_media" id="linkedin">
+            <a href="#" class="col-md-2 col-4 social_media" id="linkedin">
                 <i class="fab fa-linkedin"></i>
                 <span>LinkedIn</span>
             </a>
@@ -194,8 +195,8 @@
     </section>
     <!-- Footer -->
     <footer class="row m-3">
-        <p class="col-md-6 text-left">&copy; Islam-Buddhism Eco Dialogue - All Rights Reserved</p>
-        <p class="col-md-6 text-right">
+        <p class="col-md-6 footer-left">&copy; Islam-Buddhism Eco Dialogue - All Rights Reserved</p>
+        <p class="col-md-6 footer-right">
             <a href="#" style="color: #000;">Contact Us</a> |
             <a href="#" style="color: #000;">Privacy Policy and Terms of Service</a>
         </p>

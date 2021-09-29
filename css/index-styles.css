@@ -75,6 +75,11 @@
     height: 245px;
 }
 
+.speakers_details p {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
 /* Schedule Styles */
 
 #schedule {
@@ -83,11 +88,14 @@
 
 /* Sessions Styles */
 
+.schedule_details {
+    padding-bottom: 15px;
+}
+
 .date_day {
-    margin: 5px;
+    margin-bottom: 5px;
     padding: 5px 0;
     width: 100%;
-    border-radius: 30px;
     backdrop-filter: blur(10px) saturate(180%);
     -webkit-backdrop-filter: blur(10px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.6);
@@ -102,6 +110,7 @@
 
 .sessions_details p {
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin: 5px;
@@ -171,7 +180,39 @@
     background-color: black;
 }
 
+/* Footer Styles */
+
+footer .footer-left {
+    text-align: left;
+}
+
+footer .footer-right {
+    text-align: right;
+}
+
+/* Responsiveness */
+
+/* Mobile Screen */
+@media (max-width: 600px) {
+
+    #keynote_speakers img {
+        width: 220px;
+        height: auto;
+    }
+
+    .date_day {
+        background-color: #AEC3F3;
+    }
+
+    .sessions_details p {
+        height: 80px;
+    }
+
+}
+
+/* Small Computers Screen */
 @media (max-width: 992px) {
+
     .vl_left, .vl_right {
         border: none;
         text-align: left;
@@ -181,4 +222,9 @@
     .elaboration_para {
         text-align: left;
     }
+    
+    footer .footer-left, footer .footer-right {
+        text-align: center;
+    }
+
 }
