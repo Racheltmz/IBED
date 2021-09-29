@@ -47,6 +47,10 @@
 
 /* Brief Info and Conference Synopsis Styles */
 
+#brief_info .row, #conference_synopsis .row {
+    max-width: 1180px;
+}
+
 #brief_info img, #conference_synopsis img {
     padding: 0 30px;
 }
@@ -194,6 +198,11 @@ footer .footer-right {
 
 /* Mobile Screen */
 @media (max-width: 600px) {
+
+    #intro_video iframe {
+        height: 200px;
+        width: 100%;
+    }
 
     #keynote_speakers img {
         width: 220px;
