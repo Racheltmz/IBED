@@ -49,11 +49,11 @@
     position: absolute;
     z-index: 2;
     width: 2px;
-    left: 0;
+    left: calc(10% - 1px);
     top: -50px;
     bottom: -50px;
     background-color: #000;
-    /* display: none; */
+    display: none;
 }
 
 .line:before, .line:after {
@@ -74,21 +74,21 @@
 
 .section {
     display: flex;
-    /* opacity: 0; */
-    transform: translateX(100%);
-    transition: 500ms ease;
     position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 1000ms ease;
     z-index: 1;
-    margin: 0;
+    margin: 50px 0;
     padding: 1rem;
     border-radius: 1rem;
     align-items: center;
-    min-height: 300px;
+    min-height: 200px;
 }
 
 .section:nth-child(n) {
     flex-direction: row;
-    transform: translateX(5%);
+    transform: translateX(100%);
 }
 
 .bead {
@@ -98,17 +98,25 @@
     width: 2rem;
     border-radius: 50%;
     background-color: #000;
-    left: 0%;
+    left: 10%;
     top: 45%;
     transform: translateX(-50%)
 }
 
-.beginning_content {
+.content {
     transform: translateX(30%);
     width: calc(70%);
     padding: 10px;
-    background-color: #000;
-    color: #000;
+}
+
+.content p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.content img {
+    border-radius: 20%;
 }
 
 .show-me:nth-child(n) {
