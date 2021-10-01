@@ -4,6 +4,15 @@
 
 /* Footer Styles */
 
+footer {
+    background-color: rgb(204, 200, 200);
+    padding: 20px 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
 footer .footer-left {
     text-align: left;
 }
