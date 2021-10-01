@@ -3,3 +3,64 @@
 */
 
 @charset "utf-8";
+
+/* Schedule Styles */
+#schedule {
+    padding-top: 8em;
+    padding-bottom: 4em;
+    background-color: #a6e798;
+}
+
+/* Table Styles */
+thead {
+    background-color: #E8A854; 
+}
+
+table#mainContent {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table#mainContent td, table#mainContent th {
+    border: 1px solid gray;
+    position: relative;
+}
+
+/* Table Content Styles */
+button.expander {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+a.linkBox {
+    border-radius: 25px;
+    border: 2px solid rgb(170, 170, 170);
+    padding: 8px 15px 8px 15px;
+    display: inline-block; 
+    font-weight: bold;
+}
+
+p.details {
+    margin-left: 8px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.15s ease-in;
+}
+
+
+/* Time Button Styles */
+td.divider {
+    text-align: center;
+    background-color: rgb(56, 56, 56);
+    color: honeydew;
+    padding: 8px 12px 8px 12px;
+}
+
+div#timeButtons {
+    margin-bottom: 10px;
+}
+
+div#timeButtons label {
+    border:  1px solid #dee2e6;
+}
