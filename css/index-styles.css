@@ -184,16 +184,6 @@
     background-color: black;
 }
 
-/* Footer Styles */
-
-footer .footer-left {
-    text-align: left;
-}
-
-footer .footer-right {
-    text-align: right;
-}
-
 /* Responsiveness */
 
 /* Mobile Screen */
@@ -232,8 +222,4 @@ footer .footer-right {
         text-align: left;
     }
     
-    footer .footer-left, footer .footer-right {
-        text-align: center;
-    }
-
 }
