@@ -186,40 +186,34 @@
 
 /* Responsiveness */
 
-/* Mobile Screen */
-@media (max-width: 600px) {
-
-    #intro_video iframe {
-        height: 200px;
-        width: 100%;
-    }
-
-    #keynote_speakers img {
-        width: 220px;
-        height: auto;
-    }
-
-    .date_day {
-        background-color: #AEC3F3;
-    }
-
-    .sessions_details p {
-        height: 80px;
-    }
-
-}
-
 /* Small Computers Screen */
-@media (max-width: 992px) {
 
+@media (max-width: 992px) {
     .vl_left, .vl_right {
         border: none;
         text-align: left;
         padding: 5px 0;
     }
-
     .elaboration_para {
         text-align: left;
     }
-    
+}
+
+/* Mobile Screen */
+
+@media (max-width: 600px) {
+    #intro_video iframe {
+        height: 200px;
+        width: 100%;
+    }
+    #keynote_speakers img {
+        width: 220px;
+        height: auto;
+    }
+    .date_day {
+        background-color: #AEC3F3;
+    }
+    .sessions_details p {
+        height: 80px;
+    }
 }

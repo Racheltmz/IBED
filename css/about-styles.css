@@ -33,9 +33,10 @@
 
 /* Our Beginnings */
 
-#beginnings img {
+#beginning_img {
     height: auto;
     width: 800px;
+    padding: 15px 0;
 }
 
 /* Timeline */
@@ -128,28 +129,76 @@
     opacity: 1;
 }
 
-
-/* Mobile Screen */
-@media (max-width: 600px) {
-
-    #founding_org img, #beginnings img {
-        height: auto;
-        width: 200px;
-    }
-
-}
-
 /* Small Computers Screen */
-@media (max-width: 992px) {
 
+@media (max-width: 992px) {
     #founding_org img {
         height: auto;
         width: 300px;
     }
-
-    #beginnings img {
+    #beginning_img {
         height: auto;
         width: 650px;
     }
+    .content img {
+        height: auto;
+        width: 450px;
+        opacity: 0.4;
+    }
+    .content p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 40px;
+        z-index: 2;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
 
+/* Mobile Screen */
+
+@media (max-width: 600px) {
+    #founding_org img {
+        height: auto;
+        width: 340px;
+    }
+    #beginning_img {
+        height: auto;
+        width: 340px;
+    }
+    .section {
+        min-height: 600px;
+    }
+    /* Carousel Styles */
+    .carousel-indicators {
+        position: absolute;
+        top: 180px;
+        margin: 30px 16px;
+    }
+    .carousel-indicators li {
+        background-color: #000;
+        height: 8px;
+        width: 45px;
+        z-index: 99;
+    }
+    .card-body {
+        display: flex;
+        align-items: center;
+        height: 250px;
+    }
+    .card {
+        border-radius: 0%;
+    }
+    .card-img-top {
+        opacity: 0.9;
+    }
+    .content p {
+        position: absolute;
+        top: 160%;
+        left: 60%;
+        padding: 0 10px;
+        z-index: 2;
+    }
 }
