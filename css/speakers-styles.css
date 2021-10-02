@@ -3,6 +3,7 @@
 */
 
 @charset "utf-8";
+
 /* Speaker Styles */
 
 #day1 {
@@ -13,7 +14,7 @@
     background-color: #F6FACC;
 }
 
-.speaker_section h1 {
+.speaker_section h1, .speaker_visuals h1 {
     text-align: center;
 }
 
@@ -40,6 +41,7 @@
     height: 375px;
     width: 300px;
     border-radius: 20px;
+    margin-bottom: 30px;
 }
 
 .cards:hover:before {
@@ -59,8 +61,8 @@
 
 .cards .info {
     position: relative;
-    top: 240px;
-    height: 375px;
+    top: 80px;
+    height: 50px;
     width: 300px;
     z-index: 3;
     color: #FFF;
@@ -72,4 +74,24 @@
 .cards:hover .info {
     opacity: 1;
     transform: translateY(0px);
+}
+
+/* Speaker Sub pages Style */
+
+.speaker_visuals {
+    background-color: #E4EEE1;
+}
+ 
+.speaker_visuals row {
+    height: 480px;
+    width: auto;
+}
+
+.speaker_visuals img {
+    padding: 16px 15px;
+}
+
+.speaker_visuals iframe {
+    height: 480px;
+    width: 720px;
 }
