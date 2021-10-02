@@ -42,7 +42,6 @@ a.linkBox {
 }
 
 p.details {
-    margin-left: 8px;
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.15s ease-in;
