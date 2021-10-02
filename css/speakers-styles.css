@@ -3,3 +3,27 @@
 */
 
 @charset "utf-8";
+/* Speaker Styles */
+
+.speaker_section h1, .speaker_section h3 {
+    text-align: center;    
+}
+
+.speaker_section img {
+    height: 375px;
+    width: 300px;
+}
+
+.speaker_section .topic {
+    padding: 35px 0;
+}
+
+.speaker_section .speakers {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.speaker_section .speakers p {
+    padding: 10px 0;
+}
