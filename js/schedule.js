@@ -1,4 +1,6 @@
-// Expanding tabel details
+// File Name: schedule.js
+
+// Expanding table details
 function expand(selected) {
     e = window.event;
     if (e.target.className != "linkBox") {
@@ -102,4 +104,3 @@ LN.onclick = function () {
         currentText.innerHTML = lnText[i][0] + "<br>-<br>" + lnText[i][1];
     }
 }
-
