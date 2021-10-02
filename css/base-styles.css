@@ -2,6 +2,21 @@
 
 /* Header Styles */
 
+/* Buttons Styles */
+
+.button_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.button_link a {
+    color: black;
+    background-color: #cbffbc;
+    border: 1px solid #25d366;
+}
+
 /* Footer Styles */
 
 footer {

@@ -5,25 +5,71 @@
 @charset "utf-8";
 /* Speaker Styles */
 
-.speaker_section h1, .speaker_section h3 {
-    text-align: center;    
+#day1 {
+    background-color: #E4EEE1;
 }
 
-.speaker_section img {
-    height: 375px;
-    width: 300px;
+#day2 {
+    background-color: #F6FACC;
 }
 
-.speaker_section .topic {
+.speaker_section h1 {
+    text-align: center;
+}
+
+.speaker_section .header h3 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.speaker_section .row {
+    display: flex;
+    justify-content: center;
     padding: 35px 0;
 }
 
-.speaker_section .speakers {
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
+    height: 375px;
+    width: 300px;
+    border-radius: 20px;
 }
 
-.speaker_section .speakers p {
-    padding: 10px 0;
+.cards:hover:before {
+    opacity: 1;
+}
+
+.cards img {
+    position: absolute;
+    height: 375px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.cards:hover img {
+    opacity: 0.6;
+}
+
+.cards .info {
+    position: relative;
+    top: 240px;
+    height: 375px;
+    width: 300px;
+    z-index: 3;
+    color: #FFF;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.cards:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
 }
