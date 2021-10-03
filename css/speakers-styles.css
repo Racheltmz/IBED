@@ -81,17 +81,25 @@
 .speaker_visuals {
     background-color: #E4EEE1;
 }
- 
-.speaker_visuals row {
-    height: 480px;
+
+.speaker_visuals img {
+    padding: 0;
+    margin-bottom: 10px;
+    height: 360px;
     width: auto;
 }
 
-.speaker_visuals img {
-    padding: 16px 15px;
+.speaker_visuals iframe {
+    margin-bottom: 10px;
+    height: 360px;
+    width: 600px;
 }
 
-.speaker_visuals iframe {
-    height: 480px;
-    width: 720px;
+.speaker_name {
+    font-weight: bold;
+    font-size: 20px;
+} 
+
+.italicise {
+    font-style: italic;
 }
