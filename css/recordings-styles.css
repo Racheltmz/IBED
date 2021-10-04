@@ -1,0 +1,144 @@
+/* 
+    File name: recording-styles.css
+*/
+
+@charset "utf-8";
+
+/* Opener Styles */
+
+div.opener {
+    position: fixed;
+    top: 86px;
+    z-index: 1;
+    background-color: #555;
+    color: #f5f5f5;
+    padding: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size:15px;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* sidenav Styles */
+
+nav#sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    width: 0;
+    background-color: #555;
+    color: #f5f5f5;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+/* Sidebar header and button styles */
+
+div.sidenav-header {
+    padding-right: 20px;
+}
+
+/* Link Styles */
+
+.sidenav-header a {
+    font-size: 2.3em;
+}
+
+.sidenav-header a:hover {
+    color: #d1cfcf;
+}
+
+#sidenav ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidenav ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidenav ul li.active {
+    background: #8ca5e0;
+}
+
+#sidenav.active ul li a {
+    display: none;
+}
+
+
+/* Main Content Styles */
+
+section#recordings {
+    width: 100%;
+    margin-top: 86px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#recordings h3 {
+    margin-top: 1em;
+}
+
+/* Overlay Styles */
+
+div.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+div.overlay.active {
+    top: 0;
+    display: block;
+    opacity: 1;
+}
+
+/* Next Btn */
+
+a#nextBtn {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 800;
+    color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(58, 58, 58) 50%, #555 50%);
+    transition: background-position 275ms ease;
+    background-clip: padding-box;
+    background-size: 200% 100%;
+    background-position: 100%;
+    -webkit-background-clip: padding-box;
+}
+
+a#nextBtn:hover {
+    background-position: 0 100%;
+}
+
+/* Medium Screen */
+
+@media (max-width: 576px) {
+    div.opener {
+        position: relative;
+        display: inline-block;
+        top: 0px;
+    }
+
+    section#recordings {
+        padding-top: 1em;
+    }
+
+    #recordings h3 {
+        margin-top: 0.5em;
+    }
+}
