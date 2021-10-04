@@ -38,7 +38,7 @@ nav#sidenav {
 /* Sidebar header and button styles */
 
 div.sidenav-header {
-    padding: 20px;
+    padding-right: 20px;
 }
 
 /* Link Styles */
@@ -84,6 +84,47 @@ section#recordings {
     margin-top: 1em;
 }
 
+/* Overlay Styles */
+
+div.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+div.overlay.active {
+    top: 0;
+    display: block;
+    opacity: 1;
+}
+
+/* Next Btn */
+
+a#nextBtn {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 800;
+    color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(58, 58, 58) 50%, #555 50%);
+    transition: background-position 275ms ease;
+    background-clip: padding-box;
+    background-size: 200% 100%;
+    background-position: 100%;
+    -webkit-background-clip: padding-box;
+}
+
+a#nextBtn:hover {
+    background-position: 0 100%;
+}
+
 /* Medium Screen */
 
 @media (max-width: 576px) {
@@ -94,7 +135,7 @@ section#recordings {
     }
 
     section#recordings {
-        padding-top: 2em;
+        padding-top: 1em;
     }
 
     #recordings h3 {
