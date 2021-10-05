@@ -9,23 +9,8 @@
     background-color: #E4EEE1;
 }
 
-#brief_info, #conference_synopsis, #schedule, #event_partners {
+#brief_info, #conference_synopsis, #schedule {
     background-color: #AEC3F3;
-}
-
-/* Buttons Styles */
-
-.button_link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 0;
-}
-
-.button_link a {
-    color: black;
-    background-color: #cbffbc;
-    border: 1px solid #25d366;
 }
 
 /* Keynote Speakers Styles */
@@ -49,10 +34,6 @@
 
 #brief_info .row, #conference_synopsis .row {
     max-width: 1180px;
-}
-
-#brief_info img, #conference_synopsis img {
-    padding: 0 30px;
 }
 
 .elaboration_para {
@@ -182,6 +163,19 @@
 
 #facebook:hover, #whatsapp:hover, #twitter:hover, #linkedin:hover {
     background-color: black;
+}
+
+/* Event Partner Styles */
+
+#partner_imgs div {
+    text-align: center;
+}
+
+#partner_imgs img {
+    display: inline-block;
+    padding: 40px;
+    width: 180px;
+    height: auto;
 }
 
 /* Responsiveness */

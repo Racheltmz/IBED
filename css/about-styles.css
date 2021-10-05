@@ -6,6 +6,11 @@
 
 /* About Us Styles */
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .about_ibed {
     padding-bottom: 20px;
 }
@@ -81,7 +86,7 @@
     position: relative;
     opacity: 0;
     transform: translateX(-100%);
-    transition: 1000ms ease;
+    transition: 1500ms ease;
     z-index: 1;
     margin: 50px 0;
     padding: 1rem;
