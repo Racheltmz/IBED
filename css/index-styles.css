@@ -169,6 +169,12 @@
     background-color: black;
 }
 
+/* Event Partner Styles */
+
+#event_partners img {
+    padding: 20px;
+}
+
 /* Responsiveness */
 
 /* Small Computers Screen */
