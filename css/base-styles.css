@@ -2,6 +2,16 @@
 
 /* Header Styles */
 
+.navbar .nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+
+.top_section {
+    padding-top: 86px;
+}
+
 /* Buttons Styles */
 
 .button_link {

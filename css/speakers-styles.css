@@ -107,7 +107,7 @@
 
 /* Speaker Sub pages Style */
 
-.speaker_visuals {
+.top_section {
     background-color: #E4EEE1;
 }
 
@@ -134,6 +134,10 @@
 
 .speaker_info {
     text-align: justify;
+}
+
+.speaker_info p {
+    padding: 0;
 }
 
 .speaker_name {
