@@ -1,3 +1,13 @@
+Organisers
+Center for Civilizational Dialogue, University of Malaya (UMCCD)
+International Institute of Islamic Thought and Civilization (ISTAC-IIUM) 
+Muslim Youth Movement of Malaysia (ABIM)
+Vajrayana Buddhist Council of Malaysia (VBCM)
+Theravada Buddhist Council of Malaysia (TBCM) 
+Tibetan Buddhist Culture Centre of Malaysia (TBCC)
+
+For ABIM , Angkatan Belia Islam Malaysia (abim) in Malay.
+
 .hovereffect img {
     display: block;
     position: relative;
