@@ -1,0 +1,125 @@
+/* 
+    File name: livestream-styles.css
+*/
+
+@charset "utf-8";
+/* Main Content Styles */
+
+body, html {
+    overflow-x: hidden;
+}
+
+section#livestream {
+    margin-top: 86px;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+section#schedule {
+    padding-top: 1em;
+    padding-bottom: 3em;
+    background-color: #E4EEE1;
+}
+
+/* Quote Syles */
+
+div.quotes {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    background-color: #E4EEE1;
+    padding: 25px;
+    font-weight: 500;
+}
+
+div.quotes p {
+    margin-bottom: 0;
+}
+
+span.line {
+    display: inline-block;
+    margin-bottom: 10px;
+    line-height: normal;
+}
+
+span.quoter {
+    display: inline-block;
+    font-weight: 400;
+    color: #858484;
+}
+
+/* Table Styles */
+
+thead {
+    background-color: #E8A854;
+}
+
+table#mainContent {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table#mainContent td, table#mainContent th {
+    border: 1px solid gray;
+    position: relative;
+}
+
+td.divider {
+    text-align: center;
+    background-color: rgb(56, 56, 56);
+    color: honeydew;
+    padding: 8px 12px 8px 12px;
+}
+
+td.details-cell {
+    padding-bottom: 0;
+    vertical-align: middle;
+}
+
+/* Medium Screens */
+
+@media (max-width: 767px) {
+    div.quotes p:last-of-type {
+        margin-top: 30px;
+    }
+}
+
+/* Test Styles */
+
+.dropdown-content {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: -100px;
+    top: 65px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    max-height: 500px;
+}
+
+@media (max-width: 991px) {
+    .dropdown-content {
+        left: -5px;
+        top: 45px;
+    }
+}
