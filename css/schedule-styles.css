@@ -27,6 +27,20 @@ table#mainContent td, table#mainContent th {
 }
 
 /* Table Content Styles */
+span.down-arrow {
+    position: absolute;
+    top: 0px;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+span.down-arrow.flip {
+    transform: rotate(180deg);
+}
+
 button.expander {
     position: absolute;
     right: 5px;

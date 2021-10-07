@@ -3,14 +3,38 @@
 */
 
 @charset "utf-8";
+
+/* Overall Styles */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 /* Background Colors */
 
 #introduction {
     background-color: #E4EEE1;
 }
 
-#brief_info, #conference_synopsis, #schedule {
+#brief_info, #conference_synopsis, #schedule, #wrapper {
     background-color: #AEC3F3;
+}
+
+/* Sign up Styles */
+#sign_up_button.shaker {
+    animation-name: shake;
+    animation-duration: 2s;
+}
+
+@keyframes shake {
+    0% {transform: rotate(0deg) scale(1.0);}
+    5% {transform: rotate(5deg) scale(1.03);}
+    10% {transform: rotate(-5deg) scale(1.05);}
+    15% {transform: rotate(5deg) scale(1.05);}
+    20% {transform: rotate(-5deg) scale(1.03);}
+    25% {transform: rotate(0deg) scale(1.0);}
 }
 
 /* Keynote Speakers Styles */
@@ -30,7 +54,30 @@
     font-weight: bold;
 }
 
+#keynote_speakers {
+    opacity: 0;
+    transition: 0.35s;
+}
+
+#keynote_speakers.shown {
+    opacity: 1;
+}
+
 /* Brief Info and Conference Synopsis Styles */
+
+.section#first {
+    transform: translateX(-110%);
+    transition: 1s ease;
+}
+
+.section#second {
+    transform: translateX(110%);
+    transition: 1s ease;
+}
+
+.section.show-me#first, .section.show-me#second {
+    transform: none;
+}
 
 #brief_info .row, #conference_synopsis .row {
     max-width: 1180px;
