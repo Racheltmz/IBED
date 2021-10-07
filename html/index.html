@@ -72,7 +72,7 @@
                     allow="fullscreen;"></iframe>
             </div>
             <div class="button_link">
-                <a class="btn btn-primary text-center" href="#" role="button">Sign Up Now!</a>
+                <a class="btn btn-primary text-center" href="#" role="button" id="sign_up_button">Sign Up Now!</a>
             </div>
         </section>
     </section>
@@ -92,38 +92,44 @@
         </article>
     </section>
 
-    <!-- Brief Info on IBED -->
-    <section class="container-fluid p-5" id="brief_info">
-        <article class="row mx-auto">
-            <div class="col-lg-6 text-right">
-                <h1 class="vl_right">Brief Information<br>on IBED</h1>
-                <p class="elaboration_para">Inspired by the first forum in 2020, and the
-                    work of His Holiness the Dalai Lama in the field of inter-faith dialogues, a group of people
-                    then coalesce to initiate the Islam-Buddhism Eco Dialogue (IBED).</p>
-            </div>
-            <img src="../assets/conference/Conference1.png" class="col-lg-6" />
-        </article>
-        <div class="button_link">
-            <a class="btn btn-primary text-center" href="about.html" role="button">More About IBED</a>
-        </div>
-    </section>
-
-    <!-- Conference Synopsis -->
-    <section class="container-fluid p-5" id="conference_synopsis">
-        <article class="row text-left mx-auto">
-            <img src="../assets/conference/Conference2.png" class="col-md-6 d-none d-lg-block" />
-            <div class="col-lg-6">
-                <div class="vl_left">
-                    <h1>Conference<br>Synopsis</h1>
+    <div id="wrapper">
+        <!-- Brief Info on IBED -->
+        <section class="container-fluid p-5" id="brief_info">
+            <div class="section" id="first">
+                <article class="row mx-auto">
+                    <div class="col-lg-6 text-right">
+                        <h1 class="vl_right">Brief Information<br>on IBED</h1>
+                        <p class="elaboration_para">Inspired by the first forum in 2020, and the
+                            work of His Holiness the Dalai Lama in the field of inter-faith dialogues, a group of people
+                            then coalesce to initiate the Islam-Buddhism Eco Dialogue (IBED).</p>
+                    </div>
+                    <img src="../assets/conference/Conference1.png" class="col-lg-6" />
+                </article>
+                <div class="button_link">
+                    <a class="btn btn-primary text-center" href="about.html" role="button">More About IBED</a>
                 </div>
-                <p class="elaboration_para">Inspired by the first forum in 2020, and the
-                    work of His Holiness the Dalai Lama in the field of inter-faith dialogues, a group of people
-                    then
-                    coalesce to initiate the Islam-Buddhism Eco Dialogue (IBED). </p>
             </div>
-            <img src="../assets/conference/Conference2.png" class="col-12 d-lg-none" />
-        </article>
-    </section>
+        </section>
+        
+        <!-- Conference Synopsis -->
+        <section class="container-fluid p-5" id="conference_synopsis">
+            <div class="section" id="second">
+                <article class="row text-left mx-auto">
+                    <img src="../assets/conference/Conference2.png" class="col-md-6 d-none d-lg-block" />
+                    <div class="col-lg-6">
+                        <div class="vl_left">
+                            <h1>Conference<br>Synopsis</h1>
+                        </div>
+                        <p class="elaboration_para">Inspired by the first forum in 2020, and the
+                            work of His Holiness the Dalai Lama in the field of inter-faith dialogues, a group of people
+                            then
+                            coalesce to initiate the Islam-Buddhism Eco Dialogue (IBED). </p>
+                    </div>
+                    <img src="../assets/conference/Conference2.png" class="col-12 d-lg-none" />
+                </article>
+            </div>
+        </section>
+    </div>
 
     <!-- Speakers -->
     <section class="container p-5" id="speakers">
@@ -238,6 +244,7 @@
             </p>
         </div>
     </footer>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
