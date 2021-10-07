@@ -12,14 +12,23 @@ function expand(selected) {
             }
         }
 
+        for (var i = 0; i < selected.childNodes.length; i++) {
+            if (selected.childNodes[i].className == "topic") {
+                arrow = selected.childNodes[i].childNodes[4];
+                break;
+            }
+        }
+
         if (text.getAttribute('data-collapsed') != 'true') {
             text.style.maxHeight = "100px";
             text.style.transition = "max-height 0.25s ease-out";
             text.setAttribute('data-collapsed', 'true');
+            arrow.classList.add('flip');
         } else {
             text.style.maxHeight = "0px";
             text.style.transition = "max-height 0.15s ease-out";
             text.setAttribute('data-collapsed', 'false');
+            arrow.classList.remove('flip');
         }
     }
 }
