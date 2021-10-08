@@ -2,7 +2,6 @@
     File name: index-styles.css
 */
 
-@charset "utf-8";
 
 /* Overall Styles */
 
@@ -12,18 +11,33 @@ html, body {
 }
 
 
-/* Background Colors */
+/* Background */
 
 #introduction {
-    background-color: #E4EEE1;
+    background: url('../assets/background/home_background.jpg') top center / cover no-repeat;
 }
 
 #brief_info, #conference_synopsis, #schedule, #wrapper {
     background-color: #dfd9d9;
 }
 
+/* Introduction Styles */
+
+#introduction .left_content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#introduction .left_content h1 {
+    font-size: 58px;
+    color: white;
+}
+
 /* Sign up Styles */
-#sign_up_button.shaker {
+
+.sign_up_button.shaker {
     animation-name: shake;
     animation-duration: 2s;
 }

@@ -5,7 +5,7 @@ function qs(selector, all = false) {
 }
 
 const sections = qs('.section', true);
-const shakeButton = document.getElementById("sign_up_button");
+const shakeButtons = qs(".sign_up_button", true);
 const keynote = document.getElementById("keynote_speakers");
 let prevScrollY = window.scrollY;
 let up, down;
@@ -21,31 +21,33 @@ function scrollHandler(e) {
   down = !up;
 
   sections.forEach(item => {
-    const rect = item.getBoundingClientRect(); 
+    const rect = item.getBoundingClientRect();
 
     if (rect.top - item.offsetHeight / 5 < targetY) {
       item.classList.add('show-me');
     }
   });
 
-  const keyRect = keynote.getBoundingClientRect(); 
+  const keyRect = keynote.getBoundingClientRect();
 
-    if (keyRect.top + keynote.offsetHeight / 5  < targetY) {
-      keynote.classList.add('shown');
-    }
+  if (keyRect.top + keynote.offsetHeight / 5 < targetY) {
+    keynote.classList.add('shown');
+  }
 
   prevScrollY = window.scrollY;
 }
 
 
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    const shakeRect = shakeButton.getBoundingClientRect();
-    shakeButton.classList.add("shaker");
-  }
+  shakeButtons.forEach(shakeButton => {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      const shakeRect = shakeButton.getBoundingClientRect();
+      shakeButton.classList.add("shaker");
+    }
+  });
 }
 
 scrollHandler();
 window.addEventListener('scroll', scrollHandler);
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
