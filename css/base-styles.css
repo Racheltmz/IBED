@@ -57,7 +57,7 @@ hr {
 
 /* Buttons Styles */
 
-.button_link {
+.button_link, .signup_link {
     display: flex;
     justify-content: center;
     align-items: center;
