@@ -10,11 +10,10 @@ html, body {
     overflow-x: hidden;
 }
 
-
 /* Background */
 
 #introduction {
-    background: url('../assets/background/home_background.jpg') top center / cover no-repeat;
+    background: url('../assets/background/home_background.jpg') center center / cover no-repeat;
 }
 
 #brief_info, #conference_synopsis, #schedule, #wrapper {
