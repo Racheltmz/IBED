@@ -49,11 +49,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 0;
+    padding: 12px;
 }
 
 .button_link a {
     color: black;
+    border-radius: 20px;
     background-color: #cbffbc;
     border: 1px solid #25d366;
 }

@@ -22,6 +22,14 @@ html, body {
     background-color: #AEC3F3;
 }
 
+/* Horizontal Row Styles */
+
+hr {
+    width: 450px;
+    height: 3px;
+    background-color: #27bd59;
+}
+
 /* Sign up Styles */
 #sign_up_button.shaker {
     animation-name: shake;
@@ -220,8 +228,8 @@ html, body {
 
 #partner_imgs img {
     display: inline-block;
-    padding: 40px;
-    width: 180px;
+    margin: 10px;
+    width: 240px;
     height: auto;
 }
 
