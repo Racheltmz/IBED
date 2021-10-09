@@ -57,18 +57,39 @@ hr {
 
 /* Buttons Styles */
 
-.button_link {
+.button_link, .signup_link {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 12px;
 }
 
+.signup_link a {
+    color: white;
+    background-color: rgb(255, 255, 255, 0.1);
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.signup_link a:hover {
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+}
+
 .button_link a {
     color: black;
+    background-color: white;
+    border: 3px solid black;
     border-radius: 20px;
-    background-color: #cbffbc;
-    border: 1px solid #25d366;
+    font-size: 20px;
+}
+
+.button_link a:hover {
+    color: white;
+    background-color: black;
+    border: 3px solid white;
 }
 
 /* Footer Styles */

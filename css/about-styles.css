@@ -86,7 +86,7 @@ html, body {
     position: relative;
     opacity: 0;
     transform: translateX(-100%);
-    transition: 1500ms ease;
+    transition: 800ms ease;
     z-index: 1;
     margin: 50px 0;
     padding: 1rem;
