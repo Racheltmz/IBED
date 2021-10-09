@@ -69,7 +69,7 @@ html, body {
 
 #keynote_speakers {
     opacity: 0;
-    transition: 0.35s;
+    transition: 0.8s;
 }
 
 #keynote_speakers.shown {
@@ -78,17 +78,30 @@ html, body {
 
 /* Brief Info and Conference Synopsis Styles */
 
-.section#first {
-    transform: translateX(-110%);
+.section#first div.content {
+    transform: translateX(-200%);
     transition: 1s ease;
 }
 
-.section#second {
-    transform: translateX(110%);
+.section#first img {
+    transform: translateX(-400%);
+    transition: 1s ease;
+    animation-delay: 0.35s;
+}
+
+.section#second div.content {
+    transform: translateX(200%);
     transition: 1s ease;
 }
 
-.section.show-me#first, .section.show-me#second {
+.section#second img {
+    transform: translateX(400%);
+    transition: 1s ease;
+    animation-delay: 0.25s;
+}
+
+.section.show-me#first div.content, .section.show-me#second div.content, 
+.section.show-me#first img, .section.show-me#second img {
     transform: none;
 }
 
@@ -99,6 +112,11 @@ html, body {
 .elaboration_para {
     padding-top: 20px;
     font-size: 18px;
+}
+
+article#conference_synopsis img {
+    position: relative;
+    z-index: 10;
 }
 
 /* Vertical Line */
