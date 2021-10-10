@@ -6,6 +6,13 @@ body {
 
 /* Header Styles */
 
+.navbar span.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
 .navbar .nav-link {
     text-transform: uppercase;
     font-weight: 600;
