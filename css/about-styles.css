@@ -139,7 +139,7 @@ html, body {
 @media (max-width: 992px) {
     #founding_org img {
         height: auto;
-        width: 300px;
+        width: 240px;
     }
     #beginning_img {
         height: auto;
@@ -165,10 +165,6 @@ html, body {
 /* Mobile Screen */
 
 @media (max-width: 600px) {
-    #founding_org img {
-        height: auto;
-        width: 340px;
-    }
     #beginning_img {
         height: auto;
         width: 340px;

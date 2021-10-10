@@ -276,6 +276,9 @@ article#conference_synopsis img {
 /* Mobile Screen */
 
 @media (max-width: 600px) {
+    #introduction .left_content h1 {
+        font-size: 52px;
+    }
     #intro_video iframe {
         height: 200px;
         width: 100%;

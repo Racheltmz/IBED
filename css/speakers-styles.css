@@ -17,10 +17,13 @@
     text-align: center;
 }
 
-.speaker_section .header h3 {
+.speaker_section .header h3,
+.speaker_section .header h4 {
     display: flex;
     justify-content: center;
+    text-align: center;
     margin: 0;
+    padding: 5px 0;
 }
 
 .speaker_section .row {
