@@ -230,6 +230,12 @@ header h1 {
 /* Mobile Screen */
 
 @media (max-width: 600px) {
+    .about_ibed h3:before,
+    .about_ibed h3:after {
+        content: "";
+        flex: none;
+        margin: auto;
+    }
     #beginning_img {
         height: auto;
         width: 340px;
