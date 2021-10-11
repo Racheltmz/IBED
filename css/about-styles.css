@@ -20,7 +20,7 @@ html, body {
     text-transform: uppercase;
     width: 100%;
     margin: 10px 0 16px; 
-    padding-bottom: 5px;
+    padding: 5px;
     color:#107D8F;
     font-size: 40px;
     letter-spacing: 5px;
