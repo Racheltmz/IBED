@@ -296,3 +296,14 @@ article#conference_synopsis img {
         height: 80px;
     }
 }
+
+@media (max-width: 320px) {
+    #introduction .left_content h1 {
+        font-size: 46px;
+    }
+    #partner_imgs img {
+        width: 180px;
+        height: auto;
+    }
+    
+}
