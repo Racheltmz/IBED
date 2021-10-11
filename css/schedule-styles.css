@@ -26,16 +26,21 @@ table#mainContent td, table#mainContent th {
     position: relative;
 }
 
+table#mainContent th {
+    vertical-align: middle;
+}
+
 /* Table Content Styles */
 span.down-arrow {
-    position: absolute;
-    top: 0px;
     font-size: 30px;
     display: inline-block;
     margin-left: 20px;
     cursor: pointer;
     transition: all 0.15s;
+    vertical-align: top;
+    margin-top: -5px;
 }
+
 
 span.down-arrow.flip {
     transform: rotate(180deg);
@@ -55,10 +60,15 @@ a.linkBox {
     font-weight: bold;
 }
 
+p.topic {
+    margin-bottom: 0;
+}
+
 p.details {
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.15s ease-in;
+    margin-bottom: 0;
 }
 
 
@@ -76,4 +86,8 @@ div#timeButtons {
 
 div#timeButtons label {
     border:  1px solid #dee2e6;
+}
+
+div#timeButtons label.active {
+    background-color: rgb(34, 34, 34);
 }
