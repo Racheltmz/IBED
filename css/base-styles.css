@@ -11,13 +11,14 @@ body {
     align-items: center;
     padding-left: 10px;
     font-weight: 600;
-    font-size: large;
+    font-size: 20px;
     color: #94112C;
 }
 
 .navbar .nav-link {
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 20px;
     margin: 10px 10px;
 }
 

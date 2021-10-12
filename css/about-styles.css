@@ -279,3 +279,13 @@ header h1 {
         z-index: 2;
     }
 }
+
+@media (max-width: 320px) {
+    .about_ibed h3 {
+        font-size: 32px;
+    }
+    #beginning_img {
+        height: auto;
+        width: 300px;
+    }
+}
