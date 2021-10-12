@@ -21,6 +21,14 @@ html, body {
     background-color: #dfd9d9;
 }
 
+/* Horizontal Row Styles */
+
+hr {
+    width: 450px;
+    height: 2px;
+    background-color: #27bd59;
+}
+
 /* Introduction Styles */
 
 #introduction .left_content {
@@ -288,6 +296,9 @@ article#conference_synopsis img {
         width: 220px;
         height: auto;
     }
+    hr {
+        width: 300px;
+    }
     .date_day {
         width: 280px;
         background-color: #AEC3F3;
@@ -298,7 +309,7 @@ article#conference_synopsis img {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
     #introduction .left_content h1 {
         font-size: 46px;
     }
@@ -306,5 +317,7 @@ article#conference_synopsis img {
         width: 180px;
         height: auto;
     }
-    
+    hr {
+        width: 220px;
+    }
 }

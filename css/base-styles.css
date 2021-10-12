@@ -57,14 +57,6 @@ body {
     max-height: 500px;
 }
 
-/* Horizontal Row Styles */
-
-hr {
-    width: 450px;
-    height: 3px;
-    background-color: #27bd59;
-}
-
 /* Buttons Styles */
 
 .button_link, .signup_link {
