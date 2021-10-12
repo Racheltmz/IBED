@@ -3,7 +3,6 @@
 */
 
 @charset "utf-8";
-
 /* About Us Styles */
 
 html, body {
@@ -19,17 +18,16 @@ html, body {
     text-align: center;
     text-transform: uppercase;
     width: 100%;
-    margin: 10px 0 16px; 
+    margin: 10px 0 16px;
     padding: 5px;
-    color:#107D8F;
+    color: #107D8F;
     font-size: 40px;
     letter-spacing: 5px;
     display: flex;
     flex-direction: row;
 }
 
-.about_ibed h3:before,
-.about_ibed h3:after {
+.about_ibed h3:before, .about_ibed h3:after {
     content: "";
     flex: 1 1;
     border-bottom: 2px solid #107D8F;
@@ -210,6 +208,10 @@ header h1 {
         height: auto;
         width: 650px;
     }
+    #mission img, #values img {
+        width: 200px;
+        height: 200px;
+    }
     .content img {
         height: auto;
         width: 450px;
@@ -230,8 +232,7 @@ header h1 {
 /* Mobile Screen */
 
 @media (max-width: 600px) {
-    .about_ibed h3:before,
-    .about_ibed h3:after {
+    .about_ibed h3:before, .about_ibed h3:after {
         content: "";
         flex: none;
         margin: auto;
@@ -239,6 +240,10 @@ header h1 {
     #beginning_img {
         height: auto;
         width: 340px;
+    }
+    #mission img, #values img {
+        width: 150px;
+        height: 150px;
     }
     .section {
         min-height: 600px;
