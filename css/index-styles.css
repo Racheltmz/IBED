@@ -24,7 +24,7 @@ html, body {
 /* Horizontal Row Styles */
 
 hr {
-    width: 450px;
+    width: 200px;
     height: 2px;
     background-color: #27bd59;
 }
@@ -296,9 +296,6 @@ article#conference_synopsis img {
         width: 220px;
         height: auto;
     }
-    hr {
-        width: 300px;
-    }
     .date_day {
         width: 280px;
         background-color: #AEC3F3;
@@ -318,6 +315,6 @@ article#conference_synopsis img {
         height: auto;
     }
     hr {
-        width: 220px;
+        width: 150px;
     }
 }
