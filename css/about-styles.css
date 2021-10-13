@@ -3,7 +3,6 @@
 */
 
 @charset "utf-8";
-
 /* About Us Styles */
 
 html, body {
@@ -12,12 +11,76 @@ html, body {
 }
 
 .about_ibed {
-    padding-bottom: 20px;
+    padding-bottom: 3rem;
 }
 
-.about_ibed h3, .about_ibed p {
+.about_ibed h3 {
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 10px 0 16px;
+    padding: 5px;
+    color: #107D8F;
+    font-size: 40px;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.about_ibed h3:before, .about_ibed h3:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #107D8F;
+    margin: auto;
+}
+
+.about_ibed p {
     padding-bottom: 5px;
     text-align: center;
+    font-size: 20px;
+}
+
+/* Top Section */
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/about-us/header-waves.jpg') center center / cover no-repeat;
+    height: 36vh;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36vh;
+    font-size: 48px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+/* Mission and Vision Styles */
+
+#mission img, #values img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #107D8F;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+#mission div, #values div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* People */
+
+#people li {
+    color: #707070;
 }
 
 /* Founding Organisation */
@@ -57,7 +120,7 @@ html, body {
     left: calc(10% - 1px);
     top: -50px;
     bottom: -50px;
-    background-image: linear-gradient(#107D8f, #0a4e5a, #07353d);
+    background-image: linear-gradient(#19c030, #0a6d28, #062c11);
     display: none;
 }
 
@@ -69,17 +132,16 @@ html, body {
     width: 3rem;
     border-radius: 50%;
     left: 50%;
-    z-index: 3;
     transform: translateX(-50%)
 }
 
 .line:before {
-    background-color: #107D8f;
+    background-color: #19c030;
 }
 
 .line:after {
     bottom: 0;
-    background-color: #07353d;
+    background-color: #062c11;
 }
 
 .section {
@@ -128,13 +190,6 @@ html, body {
 
 .content img {
     border-radius: 20%;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-article.timeline div.container {
-    display: flex;
-    align-items: center;
 }
 
 .show-me:nth-child(n) {
@@ -152,6 +207,10 @@ article.timeline div.container {
     #beginning_img {
         height: auto;
         width: 650px;
+    }
+    #mission img, #values img {
+        width: 200px;
+        height: 200px;
     }
     .content img {
         height: auto;
@@ -173,9 +232,18 @@ article.timeline div.container {
 /* Mobile Screen */
 
 @media (max-width: 600px) {
+    .about_ibed h3:before, .about_ibed h3:after {
+        content: "";
+        flex: none;
+        margin: auto;
+    }
     #beginning_img {
         height: auto;
         width: 340px;
+    }
+    #mission img, #values img {
+        width: 150px;
+        height: 150px;
     }
     .section {
         min-height: 600px;
@@ -183,7 +251,7 @@ article.timeline div.container {
     /* Carousel Styles */
     .carousel-indicators {
         position: absolute;
-        top: 50vw;
+        top: 180px;
         margin: 30px 16px;
     }
     .carousel-indicators li {
@@ -209,5 +277,15 @@ article.timeline div.container {
         left: 60%;
         padding: 0 10px;
         z-index: 2;
+    }
+}
+
+@media (max-width: 320px) {
+    .about_ibed h3 {
+        font-size: 32px;
+    }
+    #beginning_img {
+        height: auto;
+        width: 300px;
     }
 }
