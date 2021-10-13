@@ -122,7 +122,7 @@ header h1 {
     left: calc(10% - 1px);
     top: -50px;
     bottom: -50px;
-    background-image: linear-gradient(#19c030, #0a6d28, #062c11);
+    background-image: linear-gradient(#107D8f, #0a4e5a, #07353d);
     display: none;
 }
 
@@ -138,12 +138,12 @@ header h1 {
 }
 
 .line:before {
-    background-color: #19c030;
+    background-color: #107D8f;
 }
 
 .line:after {
     bottom: 0;
-    background-color: #062c11;
+    background-color: #07353d;
 }
 
 .section {
@@ -192,6 +192,13 @@ header h1 {
 
 .content img {
     border-radius: 20%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+article.timeline div.container {
+    display: flex;
+    align-items: center;
 }
 
 .show-me:nth-child(n) {
@@ -253,7 +260,7 @@ header h1 {
     /* Carousel Styles */
     .carousel-indicators {
         position: absolute;
-        top: 180px;
+        top: 50vw;
         margin: 30px 16px;
     }
     .carousel-indicators li {
