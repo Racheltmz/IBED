@@ -272,7 +272,7 @@ article.timeline div.container {
     .card-body {
         display: flex;
         align-items: center;
-        height: 250px;
+        min-height: 250px;
     }
     .card {
         border-radius: 0%;
