@@ -36,8 +36,10 @@
 <body>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
-        <a class="navbar-brand" href="./index.html"><img src="../assets/Logo.jpeg" height="60"
+        <a class="navbar-brand" href="./index.html"><img src="../assets/Logo.png" height="70"
                 class="d-inline-block align-top" alt="IBED"></a>
+        <span class="navbar-org mb-0 d-none d-sm-block p-0">Islam-Buddhism Eco Dialogue</span>
+        <span class="navbar-org mb-0 d-block d-sm-none text-center p-0">Islam-Buddhism<br />Eco Dialogue</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -75,200 +77,140 @@
         <h2 class="text-center" id="title">Islam Buddhism Eco-Dialogue</h2>
         <div class="d-flex justify-content-center align-items-center py-3" id="intro_video">
             <iframe width="760" height="420" src="https://www.youtube.com/embed/bWPMSSsVdPk"
-                allow="fullscreen;"></iframe>
+                allow="fullscreen;" id="livestream"></iframe>
         </div>
-        <div class="quotes">
-            <div class="container">
-                <div class="row">
-                    <p class="col-md-6 text-center align-self-center">
-                        <span class="line">When shall I come to dwell in forests</span><br>
-                        <span class="line">Amongst the deer, the birds and the trees,</span><br>
-                        <span class="line">That say nothing unpleasant</span><br>
-                        <span class="line">And are delightful to associate with.</span><br>
-                        <span class="quoter">Śāntideva, Bodhicaryāvatāra</span>
-                    </p>
-
-                    <p class="col-md-6 text-center align-self-center">
-                        <span class="line">"Intentionally damaging or destroying </span><br>
-                        <span class="line">a living plant is an offence.”</span><br>
-                        <span class="quoter">Pacittiya 11, Patimokkha</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <h3 class="pt-4">Description</h3>
-        <p class="mt-3">
-            <strong>Buddhist Perspective</strong><br>
-            The relationship between Buddhism and nature stems from the Buddha's life. The Buddha spent all of
-            the
-            major events of his life amidst the natural forest and the tree became the most sacred symbol
-            throughout
-            the Buddhist world – e.g. the Bodhi tree in Bodhgaya where Buddha attained enlightenment. He then
-            gave
-            his first teaching in Sarnath, a place popularly called the deer park, itself a highly symbolic
-            gesture
-            of the
-            non-animosity or peace between man and animals. When the Buddha passed away, it was between two huge
-            sal trees in Kushinara. The first Buddhist communities were also forest dwellers and Buddhist monks
-            initially
-            lived under trees in natural surroundings.
-        </p>
-
-        <p class="mt-5">
-            <strong>Islam Perspective</strong><br>
-            “Behold! In the creation of the heavens and the earth; in the alternation of the night and the day;
-            in
-            the sailing
-            of the ships through the ocean for the profit of mankind; in the rain which Allah sends down from
-            the
-            skies, and
-            the life which He gives therewith to an earth that is dead; in the beasts of all kinds that He
-            scatters
-            through the
-            earth; in the change of the winds; and the clouds which they trail like their slaves between the sky
-            and
-            the
-            earth – (here) indeed are Signs for a people that are wise.” The Quran (2:168)
-            “In Islam the inseparable link between man and nature, and also between the sciences of nature and
-            religion,
-            is to be found the Quran itself, the Divine Book which is the Logos or the Word of God. As such it
-            is
-            both the
-            source of the revelation which is the basis of religion and that macrocosmic revelation which is the
-            Universe. It
-            is both the recorded Quran (al-Qur’an al-tadwini) and the ‘Quran of creation’ (al-Qur’an al-takwini)
-            which
-            contains the “ideas” or archetypes of all things. That is why the term used to signify the verses of
-            the
-            Quran or
-            ayah also means events occurring within the souls of men and phenomena in the world of nature.”
-            S. H. Nasr, Man and Nature, pp. 94-95.
-        </p>
 
     </section>
 
 
     <section id="schedule">
         <div class="container">
-            <h1 class="pl-2 align-middle" id="title"><span class="mr-3">Event Schedule</span>
-                <div class="btn-group btn-group-toggle" data-toggle="buttons" id="timeButtons">
-                    <label class="btn btn-secondary active" id="SGl">
-                        <input type="radio" name="options" id="SG" autocomplete="off" checked> Singapore
-                    </label>
-                    <label class="btn btn-secondary" id="IDl">
-                        <input type="radio" name="options" id="ID" autocomplete="off"> India
-                    </label>
-                    <label class="btn btn-secondary" id="LNl">
-                        <input type="radio" name="options" id="LN" autocomplete="off"> London
-                    </label>
+            <div class="col-md-12">
+                <h1 class="pl-2 align-middle" id="title"><span class="mr-3">Event Schedule</span>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons" id="timeButtons">
+                        <label class="btn btn-secondary active" id="SGl">
+                            <input type="radio" name="options" id="SG" autocomplete="off" checked> Malaysia
+                        </label>
+                        <label class="btn btn-secondary" id="IDl">
+                            <input type="radio" name="options" id="ID" autocomplete="off"> India
+                        </label>
+                        <label class="btn btn-secondary" id="LNl">
+                            <input type="radio" name="options" id="LN" autocomplete="off"> United Kingdom
+                        </label>
+                        <label class="btn btn-secondary" id="USl">
+                            <input type="radio" name="options" id="LN" autocomplete="off"> USA (MST)
+                        </label>
+                    </div>
+                </h1>
+
+                <div class="panel-body bg-light">
+                    <table class="table table-condensed table-striped" id="mainContent">
+                        <col style="width:10%">
+                        <col style="width:90%">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Time<br><span id="timetext">(Malaysia)</span></th>
+                                <th>Session</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td colspan="2" class="divider" id="day1">Day 1 - January 15, 2022 (Saturday)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="text-center mb-0 time">09:30<br />-<br />11:15</p>
+                                </td>
+                                <td class="details-cell" onclick="expand(this)">
+                                    <p class="topic">
+                                        <u>Topic 1:</u> <strong>Knowing and Caring of Nature – An Islamic and Buddhist
+                                            View</strong>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="text-center mb-0 time">11:30<br />-<br />13:00</p>
+                                </td>
+                                <td class="details-cell">
+                                    <p>
+                                        <u>Keynote Address by HH the Dalai Lama</u>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="text-center mb-0 time">14:00<br />-<br />15:45</p>
+                                </td>
+                                <td class="details-cell" onclick="expand(this)">
+                                    <p class="topic">
+                                        <u>Topic 2:</u> <strong>The Concept of Ecology – Sources from Quran & Buddhist
+                                            Scriptures</strong>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="text-center mb-0 time">16:00<br />-<br />17:45</p>
+                                </td>
+                                <td class="details-cell" onclick="expand(this)">
+                                    <p class="topic">
+                                        <u>Topic 3:</u> <strong>Vulnerability & Sustainability of Planet
+                                            Earth</strong>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="divider" id="day2">Day 2 - January 16, 2022 (Sunday)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="text-center mb-0 time">09:00<br />-<br />10:45</p>
+                                </td>
+                                <td class="details-cell" onclick="expand(this)">
+                                    <p class="topic">
+                                        <u>Topic 4:</u> <strong>Practical Approaches to Sustain Planet
+                                            Earth</strong>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="text-center mb-0 time">11:00<br />-<br />12:45</p>
+                                </td>
+                                <td class="details-cell" onclick="expand(this)">
+                                    <p class="topic">
+                                        <u>Topic 5:</u> <strong>Role of Civil Societies in Sustaining the Earth’s
+                                            Ecological Health</strong>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="text-center mb-0 time">14:00<br />-<br />15:45</p>
+                                </td>
+                                <td class="details-cell" onclick="expand(this)">
+                                    <p class="topic">
+                                        <u>Topic 6:</u> <strong>Education on Environmental and Ecological
+                                            Consciousness</strong>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="text-center mb-0 time">16:00<br />-<br />17:00</p>
+                                </td>
+                                <td class="details-cell">
+                                    <p>
+                                        <u>Keynote Address by Dr Reza Shah Kazemi</u>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </h1>
-
-            <div class="panel-body bg-light">
-                <table class="table table-condensed table-striped" id="mainContent">
-                    <col style="width:10%">
-                    <col style="width:90%">
-                    <thead>
-                        <tr>
-                            <th class="text-center">Time</th>
-                            <th>Session</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-                            <td colspan="2" class="divider">Day 1 - January 15, 2022 (Saturday)</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="text-center mb-0 time">09:30<br />-<br />11:15</p>
-                            </td>
-                            <td class="details-cell">
-                                <p>
-                                    <u>Topic 1:</u> <strong>Knowing and Caring of Nature – An Islamic and Buddhist
-                                        View</strong>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="text-center mb-0 time">11:30<br />-<br />13:00</p>
-                            </td>
-                            <td class="details-cell">
-                                <p>
-                                    <u>Keynote Address by HH the Dalai Lama</u>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="text-center mb-0 time">14:00<br />-<br />15:45</p>
-                            </td>
-                            <td class="details-cell">
-                                <p>
-                                    <u>Topic 2:</u> <strong>The Concept of Ecology – Sources from Quran & Buddhist
-                                        Scriptures</strong>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="text-center mb-0 time">16:00<br />-<br />17:45</p>
-                            </td>
-                            <td class="details-cell">
-                                <p>
-                                    <u>Topic 3:</u> <strong>Vulnerability & Sustainability of Planet Earth</strong>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="divider">Day 2 - January 16, 2022 (Sunday)</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="text-center mb-0 time">09:00<br />-<br />10:45</p>
-                            </td>
-                            <td class="details-cell">
-                                <p>
-                                    <u>Topic 4:</u> <strong>Practical Approaches to Sustain Planet Earth</strong>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="text-center mb-0 time">11:00<br />-<br />12:45</p>
-                            </td>
-                            <td class="details-cell">
-                                <p>
-                                    <u>Topic 5:</u> <strong>Role of Civil Societies in Sustaining the Earth’s
-                                        Ecological Health</strong>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="text-center mb-0 time">14:00<br />-<br />15:45</p>
-                            </td>
-                            <td class="details-cell">
-                                <p>
-                                    <u>Topic 6:</u> <strong>Education on Environmental and Ecological
-                                        Consciousness</strong>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="text-center mb-0 time">16:00<br />-<br />17:00</p>
-                            </td>
-                            <td class="details-cell">
-                                <p>
-                                    <u>Keynote Address by Dr Reza Shah Kazemi</u>
-                                </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
 
 
             </div>

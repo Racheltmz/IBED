@@ -1,21 +1,24 @@
 @charset "utf-8";
 
 body {
-    background-color: #F4F6F4;
+    background-color: #FFF;
 }
 
 /* Header Styles */
 
-.navbar span.navbar-brand {
+.navbar span.navbar-org {
     display: flex;
     align-items: center;
     padding-left: 10px;
     font-weight: 600;
+    font-size: 20px;
+    color: #94112C;
 }
 
 .navbar .nav-link {
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 20px;
     margin: 10px 10px;
 }
 
@@ -52,14 +55,6 @@ body {
 
 .dropdown:hover .dropdown-content {
     max-height: 500px;
-}
-
-/* Horizontal Row Styles */
-
-hr {
-    width: 450px;
-    height: 3px;
-    background-color: #27bd59;
 }
 
 /* Buttons Styles */

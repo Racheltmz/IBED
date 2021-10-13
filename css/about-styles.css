@@ -79,8 +79,10 @@ header h1 {
 
 /* People */
 
-#people li {
+#people_names p {
     color: #707070;
+    margin: 0;
+    font-size: 16px;
 }
 
 /* Founding Organisation */
