@@ -44,14 +44,14 @@ html, body {
 
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/about-us/header-waves.jpg') center center / cover no-repeat;
-    height: 36vh;
+    height: 40vh;
 }
 
 header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 36vh;
+    height: 40vh;
     font-size: 48px;
     color: #FFF;
     text-transform: uppercase;
