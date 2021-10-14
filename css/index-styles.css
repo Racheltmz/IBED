@@ -26,7 +26,7 @@ html, body {
 hr {
     width: 200px;
     height: 2px;
-    background-color: #27bd59;
+    background-color: rgb(102,102,102);
 }
 
 /* Introduction Styles */
