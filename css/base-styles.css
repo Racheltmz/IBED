@@ -123,12 +123,15 @@ a, a:hover, a:focus {
 
 /* Small Computers Screen */
 @media (max-width: 992px) {
+    .navbar-brand img {
+        width: 50px;
+        height: 50px;
+    }
 
     footer .footer-left, footer .footer-right {
         text-align: center;
     }
 
-    
     .dropdown-content {
         left: -5px;
         top: 45px;
