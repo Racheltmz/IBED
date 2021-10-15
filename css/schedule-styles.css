@@ -3,17 +3,48 @@
 */
 
 @charset "utf-8";
-
 /* Schedule Styles */
+
 #schedule {
-    padding-top: 8em;
+    padding-top: 96px;
     padding-bottom: 4em;
-    background-color: #a6e798;
+    background-color: #F4F6F4;
+}
+
+#schedule div.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/background/HeaderMountain2.jpg') center bottom 60% / cover no-repeat;
+    height: 40vh;
+}
+
+#schedule div.header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-size: 48px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+#schedule #content {
+    padding-top: 30px;
 }
 
 /* Table Styles */
+
+#tableContainer {
+    border-width: 2px;
+    border-color: #707070;
+    border-style: solid;
+}
+
+#tableContainer table.table {
+    margin-bottom: 0px;
+}
+
 thead {
-    background-color: #E8A854; 
+    background-color: #C68D8B;
+    color: #fff;
 }
 
 table#mainContent {
@@ -31,6 +62,7 @@ table#mainContent th {
 }
 
 /* Table Content Styles */
+
 span.down-arrow {
     font-size: 30px;
     display: inline-block;
@@ -40,7 +72,6 @@ span.down-arrow {
     vertical-align: top;
     margin-top: -5px;
 }
-
 
 span.down-arrow.flip {
     transform: rotate(180deg);
@@ -56,7 +87,7 @@ a.linkBox {
     border-radius: 25px;
     border: 2px solid rgb(170, 170, 170);
     padding: 8px 15px 8px 15px;
-    display: inline-block; 
+    display: inline-block;
     font-weight: bold;
 }
 
@@ -71,8 +102,8 @@ p.details {
     margin-bottom: 0;
 }
 
-
 /* Time Button Styles */
+
 td.divider {
     text-align: center;
     background-color: rgb(56, 56, 56);
@@ -85,9 +116,29 @@ div#timeButtons {
 }
 
 div#timeButtons label {
-    border:  1px solid #dee2e6;
+    cursor: pointer;
 }
 
-div#timeButtons label.active {
+/* div#timeButtons label.active {
     background-color: rgb(34, 34, 34);
+} */
+
+div#timeButtons #SGl {
+    background-color: #C68D8B;
+    border: 2px solid #C68D8B;
+}
+
+div#timeButtons #IDl {
+    background-color: #AC7274;
+    border: 2px solid #AC7274;
+}
+
+div#timeButtons #LNl {
+    background-color: #985D6B;
+    border: 2px solid #985D6B;
+}
+
+div#timeButtons #USl {
+    background-color: #694453;
+    border: 2px solid #694453;
 }
