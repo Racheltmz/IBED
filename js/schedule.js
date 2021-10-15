@@ -62,7 +62,11 @@ function convert(time) {
         var result = indiv.map(function (x) {
             hours = Math.floor(x / 60);
             min = x - (hours * 60);
-            string = hours.toString().padStart(2, "0") + ":" + min.toString().padStart(2, "0");
+            if (min % 5 == 1) {
+                string = hours.toString() + ":" + (min - 1).toString().padStart(2, "0") + "pm";
+            } else {
+                string = hours.toString() + ":" + min.toString().padStart(2, "0") + "am";
+            }
             return string;
         });
         text.push(result);
@@ -75,8 +79,12 @@ function change(time, difference) {
     for (i = 0; i < time.length; i++) {
         var diffed = time[i].map(function (x) {
             changedTime = x - difference;
-            if (changedTime < 0) {
-                changedTime = 1440 + changedTime;
+            if (changedTime > 780) {
+                changedTime = changedTime - 720;
+                changedTime += 1;
+            } else if (changedTime < 0) {
+                changedTime = 720 + changedTime;
+                changedTime += 1;
             }
             return changedTime;
         });
@@ -96,6 +104,7 @@ lnText = convert(lnTime);
 usTime = change(sgTime, 840);
 usText = convert(usTime);
 
+sgTime = change(sgTime, 0);
 sgTexter = convert(sgTime);
 
 // Applying functions to respective buttons
@@ -109,6 +118,17 @@ function replaceText() {
     day2.innerHTML = text2;
 }
 
+var header = document.getElementById("tableHeader");
+
+for (i = 0; i < sgText.length; i++) {
+    currentText = sgText[i];
+    currentText.innerHTML = sgTexter[i][0] + "<br>-<br>" + sgTexter[i][1];
+}
+var timetext = document.getElementById("timetext");
+timetext.innerHTML = "(Malaysia)";
+header.style.backgroundColor = "#C68D8B";
+replaceText();
+
 var SG = document.getElementById("SGl");
 SG.onclick = function () {
     for (i = 0; i < sgText.length; i++) {
@@ -117,6 +137,7 @@ SG.onclick = function () {
     }
     var timetext = document.getElementById("timetext");
     timetext.innerHTML = "(Malaysia)";
+    header.style.backgroundColor = "#C68D8B";
     replaceText();
 }
 
@@ -128,6 +149,7 @@ ID.onclick = function () {
     }
     var timetext = document.getElementById("timetext");
     timetext.innerHTML = "(India)";
+    header.style.backgroundColor = "#AC7274";
     replaceText();
 }
 
@@ -139,6 +161,7 @@ LN.onclick = function () {
     }
     var timetext = document.getElementById("timetext");
     timetext.innerHTML = "(UK)";
+    header.style.backgroundColor = "#985D6B";
     replaceText();
 }
 
@@ -151,8 +174,9 @@ US.onclick = function () {
     var timetext = document.getElementById("timetext");
     timetext.innerHTML = "(US, Colorado)";
     var day1 = document.getElementById("day1");
-    day1.innerHTML = "Day 1 - January 14-15, 2022 (Fri-Sat)"
+    day1.innerHTML = "Day 1 - January 14-15, 2022 (Fri-Sat)";
     var day2 = document.getElementById("day2");
-    day2.innerHTML = "Day 2 - January 15-16, 2022 (Sat-Sun)"
+    day2.innerHTML = "Day 2 - January 15-16, 2022 (Sat-Sun)";
+    header.style.backgroundColor = "#694453";
 }
 
