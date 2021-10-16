@@ -78,12 +78,6 @@ span.down-arrow.flip {
     transform: rotate(180deg);
 }
 
-button.expander {
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-}
-
 a.linkBox {
     border-radius: 25px;
     border: 2px solid rgb(170, 170, 170);
@@ -99,7 +93,7 @@ p.topic {
 p.details {
     max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.15s ease-in;
+    transition: max-height 0.25s ease-in;
     margin-bottom: 0;
 }
 
@@ -112,11 +106,11 @@ td.divider {
     padding: 8px 12px 8px 12px;
 }
 
-div#timeButtons {
+div.timeButtons {
     margin-bottom: 10px;
 }
 
-div#timeButtons label {
+div.timeButtons label {
     cursor: pointer;
 }
 
@@ -124,22 +118,50 @@ div#timeButtons label {
     background-color: rgb(34, 34, 34);
 } */
 
-div#timeButtons #SGl {
+div.timeButtons label.btn.btn-secondary.SGl {
     background-color: #C68D8B;
     border: 2px solid #C68D8B;
 }
 
-div#timeButtons #IDl {
+div.timeButtons label.btn.btn-secondary.IDl {
     background-color: #AC7274;
     border: 2px solid #AC7274;
 }
 
-div#timeButtons #LNl {
+div.timeButtons label.btn.btn-secondary.LNl {
     background-color: #985D6B;
     border: 2px solid #985D6B;
 }
 
-div#timeButtons #USl {
+div.timeButtons label.btn.btn-secondary.USl {
     background-color: #694453;
     border: 2px solid #694453;
+}
+
+#smallScreen {
+    display: none;
+}
+
+#smallScreen div {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+#smallScreen div label {
+    width: 50%;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    #schedule {
+        padding-top: 76px;
+    }
+
+    #bigScreen {
+        display: none;
+    }
+
+    #smallScreen {
+        display: block;
+    }
 }
