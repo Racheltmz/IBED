@@ -43,6 +43,10 @@ hr {
     color: white;
 }
 
+#iframe {
+    border: 0;
+}
+
 /* Sign up Styles */
 
 .sign_up_button.shaker {
