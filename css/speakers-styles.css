@@ -181,6 +181,7 @@ hr {
     margin-bottom: 10px;
     height: 360px;
     width: 600px;
+    border: 0;
 }
 
 .speaker_info {
@@ -208,4 +209,17 @@ hr {
         width: 760px;
     }
     
+}
+
+/* Galaxy Fold Screen */
+@media (max-width: 280px) {
+    .speaker_visuals h1 {
+        font-size: 30px;
+    }
+    .speaker_visuals img {
+        height: 260px;
+    }
+    .speaker_visuals iframe {
+        width: 280px;
+    }
 }

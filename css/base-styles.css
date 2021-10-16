@@ -123,6 +123,10 @@ a, a:hover, a:focus {
 
 /* Small Computers Screen */
 @media (max-width: 992px) {
+    .top_section {
+        padding-top: 76px;
+    }
+
     .navbar-brand img {
         width: 50px;
         height: 50px;
@@ -137,4 +141,11 @@ a, a:hover, a:focus {
         top: 45px;
     }
 
+}
+
+/* Galaxy Fold Screen */
+@media (max-width: 280px) {
+    .navbar span.navbar-org {
+        font-size: 16px;
+    }    
 }
