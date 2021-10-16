@@ -3,8 +3,6 @@
 */
 
 @charset "utf-8";
-
-
 /* Speaker Styles */
 
 header {
@@ -43,9 +41,7 @@ header h1 {
     text-align: center;
 }
 
-.speaker_section .header h3,
-.speaker_section .header h5,
-.speaker_section .header div {
+.speaker_section .header h3, .speaker_section .header h5, .speaker_section .header div {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -53,8 +49,7 @@ header h1 {
     padding: 5px 0;
 }
 
-.speaker_section .header div:before, 
-.speaker_section .header div:after {
+.speaker_section .header div:before, .speaker_section .header div:after {
     content: "";
     flex: 1 1;
     border-bottom: 1px solid #36302A;
@@ -177,7 +172,7 @@ hr {
     box-shadow: 5px 5px 10px #8a8a8a, -5px -5px 10px #a2a2a2;
 }
 
-.speaker_visuals iframe {
+#intro_video iframe {
     margin-bottom: 10px;
     height: 360px;
     width: 600px;
@@ -202,24 +197,29 @@ hr {
 }
 
 /* Large Screen */
-@media (min-width: 1700px) {
 
-    .speaker_visuals iframe {
+@media (min-width: 1700px) {
+    #intro_video iframe {
         height: 360px;
         width: 760px;
     }
-    
+}
+
+@media (max-width: 576px) {
+    #intro_video iframe {
+        height: 200px;
+        width: auto;
+        padding-top: 20px;
+    }
 }
 
 /* Galaxy Fold Screen */
+
 @media (max-width: 280px) {
     .speaker_visuals h1 {
         font-size: 30px;
     }
     .speaker_visuals img {
         height: 260px;
-    }
-    .speaker_visuals iframe {
-        width: 280px;
     }
 }

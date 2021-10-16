@@ -84,6 +84,10 @@ section#recordings {
     margin-top: 1em;
 }
 
+#recordings iframe {
+    border: 0;
+}
+
 /* Overlay Styles */
 
 div.overlay {
@@ -140,5 +144,10 @@ a#nextBtn:hover {
 
     #recordings h3 {
         margin-top: 0.5em;
+    }
+
+    #recordings iframe {
+        height: 200px;
+        width: auto;
     }
 }

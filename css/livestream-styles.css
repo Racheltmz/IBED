@@ -81,3 +81,11 @@ div#timeButtons label.active {
         margin-top: 30px;
     }
 }
+
+/* Mobile Screen */
+@media (max-width: 576px) {
+    #livestream iframe {
+        height: 200px;
+        width: auto;
+    }
+}
