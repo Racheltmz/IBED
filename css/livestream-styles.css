@@ -7,6 +7,7 @@
 
 body, html {
     overflow-x: hidden;
+    background-color: #F4F6F4;
 }
 
 section#livestream {
@@ -18,13 +19,24 @@ section#livestream {
 section#schedule {
     padding-top: 1em;
     padding-bottom: 3em;
-    background-color: #E4EEE1;
+    background-color: #F4F6F4;
 }
 
 /* Table Styles */
 
+#tableContainer {
+    border-width: 2px;
+    border-color: #707070;
+    border-style: solid;
+}
+
+#tableContainer table.table {
+    margin-bottom: 0px;
+}
+
 thead {
-    background-color: #E8A854;
+    background-color: #C68D8B;
+    color: #fff;
 }
 
 table#mainContent {
@@ -32,13 +44,13 @@ table#mainContent {
     border-style: hidden;
 }
 
-table#mainContent th {
-    vertical-align: middle;
-}
-
 table#mainContent td, table#mainContent th {
     border: 1px solid gray;
     position: relative;
+}
+
+table#mainContent th {
+    vertical-align: middle;
 }
 
 td.divider {
@@ -67,17 +79,29 @@ div#timeButtons {
 }
 
 div#timeButtons label {
-    border:  1px solid #dee2e6;
+    cursor: pointer;
 }
 
-div#timeButtons label.active {
+/* div#timeButtons label.active {
     background-color: rgb(34, 34, 34);
+} */
+
+div#timeButtons #SGl {
+    background-color: #C68D8B;
+    border: 2px solid #C68D8B;
 }
 
-/* Medium Screens */
+div#timeButtons #IDl {
+    background-color: #AC7274;
+    border: 2px solid #AC7274;
+}
 
-@media (max-width: 767px) {
-    div.quotes p:last-of-type {
-        margin-top: 30px;
-    }
+div#timeButtons #LNl {
+    background-color: #985D6B;
+    border: 2px solid #985D6B;
+}
+
+div#timeButtons #USl {
+    background-color: #694453;
+    border: 2px solid #694453;
 }
