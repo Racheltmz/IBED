@@ -105,3 +105,11 @@ div#timeButtons #USl {
     background-color: #694453;
     border: 2px solid #694453;
 }
+
+/* Mobile Screen */
+@media (max-width: 576px) {
+    #livestream iframe {
+        height: 200px;
+        width: auto;
+    }
+}

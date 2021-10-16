@@ -3,8 +3,6 @@
 */
 
 @charset "utf-8";
-
-
 /* Speaker Styles */
 
 header {
@@ -43,9 +41,7 @@ header h1 {
     text-align: center;
 }
 
-.speaker_section .header h3,
-.speaker_section .header h5,
-.speaker_section .header div {
+.speaker_section .header h3, .speaker_section .header h5, .speaker_section .header div {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -53,8 +49,7 @@ header h1 {
     padding: 5px 0;
 }
 
-.speaker_section .header div:before, 
-.speaker_section .header div:after {
+.speaker_section .header div:before, .speaker_section .header div:after {
     content: "";
     flex: 1 1;
     border-bottom: 1px solid #36302A;
@@ -95,7 +90,8 @@ hr {
     margin-bottom: 30px;
 }
 
-.hovereffect {
+.hovereffect,
+.hovereffect_no_pic {
     position: absolute;
     text-align: center;
     display: flex;
@@ -135,7 +131,21 @@ hr {
     filter: alpha(opacity=40);
 }
 
-.hovereffect p {
+.hovereffect_no_pic .overlay {
+    position: absolute;
+    left: 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 300px;
+    height: 375px;
+    padding: 50px 20px;
+    opacity: 1;
+}
+
+.hovereffect p, #no_pic p {
     text-transform: uppercase;
     color: #FFF;
     text-align: center;
@@ -146,7 +156,8 @@ hr {
     background-color: transparent;
 }
 
-.hovereffect p:after {
+.hovereffect p:after,
+#no_pic p:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -177,10 +188,11 @@ hr {
     box-shadow: 5px 5px 10px #8a8a8a, -5px -5px 10px #a2a2a2;
 }
 
-.speaker_visuals iframe {
+#intro_video iframe {
     margin-bottom: 10px;
     height: 360px;
     width: 600px;
+    border: 0;
 }
 
 .speaker_info {
@@ -201,11 +213,29 @@ hr {
 }
 
 /* Large Screen */
-@media (min-width: 1700px) {
 
-    .speaker_visuals iframe {
+@media (min-width: 1700px) {
+    #intro_video iframe {
         height: 360px;
         width: 760px;
     }
-    
+}
+
+@media (max-width: 576px) {
+    #intro_video iframe {
+        height: 200px;
+        width: auto;
+        padding-top: 20px;
+    }
+}
+
+/* Galaxy Fold Screen */
+
+@media (max-width: 280px) {
+    .speaker_visuals h1 {
+        font-size: 30px;
+    }
+    .speaker_visuals img {
+        height: 260px;
+    }
 }
