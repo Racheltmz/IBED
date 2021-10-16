@@ -90,7 +90,8 @@ hr {
     margin-bottom: 30px;
 }
 
-.hovereffect {
+.hovereffect,
+.hovereffect_no_pic {
     position: absolute;
     text-align: center;
     display: flex;
@@ -130,7 +131,21 @@ hr {
     filter: alpha(opacity=40);
 }
 
-.hovereffect p {
+.hovereffect_no_pic .overlay {
+    position: absolute;
+    left: 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 300px;
+    height: 375px;
+    padding: 50px 20px;
+    opacity: 1;
+}
+
+.hovereffect p, #no_pic p {
     text-transform: uppercase;
     color: #FFF;
     text-align: center;
@@ -141,7 +156,8 @@ hr {
     background-color: transparent;
 }
 
-.hovereffect p:after {
+.hovereffect p:after,
+#no_pic p:after {
     position: absolute;
     bottom: 0;
     left: 0;
