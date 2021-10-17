@@ -17,6 +17,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
     <!-- CSS Code -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -56,7 +61,9 @@
                         <a class="dropbtn nav-link" href="./livestream.html">Videos</a>
                         <div class="dropdown-content">
                             <a href="./livestream.html">Livestream</a>
-                            <a href="./rec1.html">Recordings</a>
+                            <a href="./rec1.html" data-toggle="tooltip"
+                                title="Recordings will be available after the event" data-placement="bottom"
+                                class="disable" onclick="return false;">Recordings</a>
                         </div>
                     </div>
                 </li>
@@ -77,39 +84,39 @@
                 </div>
             </article>
         </section>
-        </sectionc>
+    </section>
 
-        <!-- Speaker Info -->
-        <section class="container speaker_info p-5">
-            <p><span class="speaker_name">Venerable Abbot Geshe Tashi Tsering</span> studied at Sera Mey Monastic
-                University, India, and graduated with a
-                Lharampa Geshe degree, an equivalent of a Ph.D. He then entered the Higher Tantric College for another
-                year
-                of study. Geshe Tashi’s teaching career began at Sera, followed by Kopan Monastery, Nepal, Gandhi
-                Foundation
-                College in Nagpur, India, and then Europe, initially at Nalanda Monastery in France, before moving to
-                UK,
-                where he was the resident teacher at Jamyang Buddhist Centre in London from 1994 to 2018. In 2017 he
-                received a M.A degree in Social Anthropology from the School of Oriental and African Studies,
-                London.<br /><br />
+    <!-- Speaker Info -->
+    <section class="container speaker_info p-5">
+        <p><span class="speaker_name">Venerable Abbot Geshe Tashi Tsering</span> studied at Sera Mey Monastic
+            University, India, and graduated with a
+            Lharampa Geshe degree, an equivalent of a Ph.D. He then entered the Higher Tantric College for another
+            year
+            of study. Geshe Tashi’s teaching career began at Sera, followed by Kopan Monastery, Nepal, Gandhi
+            Foundation
+            College in Nagpur, India, and then Europe, initially at Nalanda Monastery in France, before moving to
+            UK,
+            where he was the resident teacher at Jamyang Buddhist Centre in London from 1994 to 2018. In 2017 he
+            received a M.A degree in Social Anthropology from the School of Oriental and African Studies,
+            London.<br /><br />
 
-                He developed and taught the Foundations of Buddhist Thought, a two-year correspondence and campus course
-                on
-                the basics of Tibetan Buddhism in English. In June 2019 Geshe Tashi was awarded the British Empire Medal
-                in
-                the Queen's birthday honors list for his services to Buddhism in the UK.</p>
-        </section>
+            He developed and taught the Foundations of Buddhist Thought, a two-year correspondence and campus course
+            on
+            the basics of Tibetan Buddhism in English. In June 2019 Geshe Tashi was awarded the British Empire Medal
+            in
+            the Queen's birthday honors list for his services to Buddhism in the UK.</p>
+    </section>
 
-        <!-- Footer -->
-        <footer class="container-fluid">
-            <div class="row">
-                <p class="col-md-6 footer-left">&copy; Islam-Buddhism Eco Dialogue - All Rights Reserved</p>
-                <p class="col-md-6 footer-right">
-                    <a href="#" style="color: #000;">Contact Us</a> |
-                    <a href="#" style="color: #000;">Privacy Policy and Terms of Service</a>
-                </p>
-            </div>
-        </footer>
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="row">
+            <p class="col-md-6 footer-left">&copy; Islam-Buddhism Eco Dialogue - All Rights Reserved</p>
+            <p class="col-md-6 footer-right">
+                <a href="#" style="color: #000;">Contact Us</a> |
+                <a href="#" style="color: #000;">Privacy Policy and Terms of Service</a>
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>

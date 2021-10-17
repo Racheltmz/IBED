@@ -17,6 +17,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
     <!-- CSS Code -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -57,7 +62,9 @@
                         <a class="dropbtn nav-link" href="./livestream.html">Videos</a>
                         <div class="dropdown-content">
                             <a href="./livestream.html">Livestream</a>
-                            <a href="./rec1.html">Recordings</a>
+                            <a href="./rec1.html" data-toggle="tooltip"
+                                title="Recordings will be available after the event" data-placement="bottom"
+                                class="disable" onclick="return false;">Recordings</a>
                         </div>
                     </div>
                 </li>
@@ -236,9 +243,9 @@
                                 experiences in the field of inter-faith dialogues and voiced his wish to be able to
                                 engage
                                 with His Holiness the Dalai Lama in these subjects.</p>
-                                <div class="container col-lg-4">
-                                    <img src="../assets/ISTAC/istac4.jpg" alt="Slide4">
-                                </div>
+                            <div class="container col-lg-4">
+                                <img src="../assets/ISTAC/istac4.jpg" alt="Slide4">
+                            </div>
                         </div>
                     </div>
                     <div class="section">
