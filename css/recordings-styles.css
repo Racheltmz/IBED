@@ -5,6 +5,11 @@
 
 @charset "utf-8";
 
+/* Body Styles */
+body {
+    background-color: #F4F6F4;
+}
+
 /* Opener Styles */
 
 div.opener {
@@ -157,6 +162,10 @@ a#nextBtn:hover {
 
     #recordings h3 {
         margin-top: 0.5em;
+    }
+
+    #recordings h2 {
+        font-size: 1.5em;
     }
 
     #recordings iframe {
