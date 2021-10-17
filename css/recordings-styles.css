@@ -9,7 +9,7 @@
 
 div.opener {
     position: fixed;
-    top: 86px;
+    top: 96px;
     z-index: 1;
     background-color: #555;
     color: #f5f5f5;
@@ -34,6 +34,7 @@ nav#sidenav {
     overflow-x: hidden;
     overflow-y: hidden;
     transition: 0.5s;
+    margin-top: 10px;
 }
 
 /* Sidebar header and button styles */
@@ -130,13 +131,24 @@ a#nextBtn:hover {
     background-position: 0 100%;
 }
 
+/* Responsive Design */
+@media (max-width: 992px) {
+    div.opener {
+        top: 76px;
+    }
+
+    nav#sidenav {
+        margin-top: -10px;
+    }
+}
+
 /* Medium Screen */
 
 @media (max-width: 576px) {
     div.opener {
         position: relative;
         display: inline-block;
-        top: 0px;
+        top: -10px;
     }
 
     section#recordings {

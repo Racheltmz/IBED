@@ -34,7 +34,7 @@ body {
     max-height: 0;
     overflow: hidden;
     position: absolute;
-    left: -100px;
+    left: -70px;
     top: 62px;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -52,8 +52,16 @@ body {
     text-align: left;
 }
 
+.dropdown-content a.disable {
+    color: gray;
+}
+
 .dropdown-content a:hover {
     background-color: #ddd;
+}
+
+.dropdown-content a.disable:hover {
+    background-color: #fff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -123,6 +131,9 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
+a.disable {
+    cursor: default;
+}
 
 /* Small Computers Screen */
 @media (max-width: 992px) {

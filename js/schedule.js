@@ -3,7 +3,8 @@
 // Expanding table details
 function expand(selected) {
     e = window.event;
-    if (e.target.className != "linkBox") {
+    className = JSON.stringify(e.target.className);
+    if (!className.includes("linkBox")) {
         var text = null;
         for (var i = 0; i < selected.childNodes.length; i++) {
             if (selected.childNodes[i].className == "details") {
@@ -20,14 +21,14 @@ function expand(selected) {
         }
 
         if (text.getAttribute('data-collapsed') != 'true') {
-            text.style.maxHeight = "150px";
+            text.style.maxHeight = "200px";
             text.style.transition = "max-height 0.25s ease-out";
             text.style.marginBottom = "1rem";
             text.setAttribute('data-collapsed', 'true');
             arrow.classList.add('flip');
         } else {
             text.style.maxHeight = "0px";
-            text.style.transition = "max-height 0.15s ease-out";
+            text.style.transition = "max-height 0.25s ease-out";
             text.style.marginBottom = "0";
             text.setAttribute('data-collapsed', 'false');
             arrow.classList.remove('flip');
@@ -129,54 +130,65 @@ timetext.innerHTML = "(Malaysia)";
 header.style.backgroundColor = "#C68D8B";
 replaceText();
 
-var SG = document.getElementById("SGl");
-SG.onclick = function () {
-    for (i = 0; i < sgText.length; i++) {
-        currentText = sgText[i];
-        currentText.innerHTML = sgTexter[i][0] + "<br>-<br>" + sgTexter[i][1];
+var SG = document.getElementsByClassName("SGl");
+for (i = 0; i < SG.length; i++) {
+    var SGl = SG[i];
+    SGl.onclick = function () {
+        for (i = 0; i < sgText.length; i++) {
+            currentText = sgText[i];
+            currentText.innerHTML = sgTexter[i][0] + "<br>-<br>" + sgTexter[i][1];
+        }
+        var timetext = document.getElementById("timetext");
+        timetext.innerHTML = "(Malaysia)";
+        header.style.backgroundColor = "#C68D8B";
+        replaceText();
     }
-    var timetext = document.getElementById("timetext");
-    timetext.innerHTML = "(Malaysia)";
-    header.style.backgroundColor = "#C68D8B";
-    replaceText();
 }
 
-var ID = document.getElementById("IDl");
-ID.onclick = function () {
-    for (i = 0; i < sgText.length; i++) {
-        currentText = sgText[i];
-        currentText.innerHTML = idText[i][0] + "<br>-<br>" + idText[i][1];
+var ID = document.getElementsByClassName("IDl");
+for (i = 0; i < ID.length; i++) {
+    var IDl = ID[i];
+    IDl.onclick = function () {
+        for (i = 0; i < sgText.length; i++) {
+            currentText = sgText[i];
+            currentText.innerHTML = idText[i][0] + "<br>-<br>" + idText[i][1];
+        }
+        var timetext = document.getElementById("timetext");
+        timetext.innerHTML = "(India)";
+        header.style.backgroundColor = "#AC7274";
+        replaceText();
     }
-    var timetext = document.getElementById("timetext");
-    timetext.innerHTML = "(India)";
-    header.style.backgroundColor = "#AC7274";
-    replaceText();
 }
 
-var LN = document.getElementById("LNl");
-LN.onclick = function () {
-    for (i = 0; i < sgText.length; i++) {
-        currentText = sgText[i];
-        currentText.innerHTML = lnText[i][0] + "<br>-<br>" + lnText[i][1];
+var LN = document.getElementsByClassName("LNl");
+for (i = 0; i < LN.length; i++) {
+    var LNl = LN[i];
+    LNl.onclick = function () {
+        for (i = 0; i < sgText.length; i++) {
+            currentText = sgText[i];
+            currentText.innerHTML = lnText[i][0] + "<br>-<br>" + lnText[i][1];
+        }
+        var timetext = document.getElementById("timetext");
+        timetext.innerHTML = "(UK)";
+        header.style.backgroundColor = "#985D6B";
+        replaceText();
     }
-    var timetext = document.getElementById("timetext");
-    timetext.innerHTML = "(UK)";
-    header.style.backgroundColor = "#985D6B";
-    replaceText();
 }
 
-var US = document.getElementById("USl");
-US.onclick = function () {
-    for (i = 0; i < sgText.length; i++) {
-        currentText = sgText[i];
-        currentText.innerHTML = usText[i][0] + "<br>-<br>" + usText[i][1];
+var US = document.getElementsByClassName("USl");
+for (i = 0; i < US.length; i++) {
+    var USl = US[i];
+    USl.onclick = function () {
+        for (i = 0; i < sgText.length; i++) {
+            currentText = sgText[i];
+            currentText.innerHTML = usText[i][0] + "<br>-<br>" + usText[i][1];
+        }
+        var timetext = document.getElementById("timetext");
+        timetext.innerHTML = "(US, Colorado)";
+        var day1 = document.getElementById("day1");
+        day1.innerHTML = "Day 1 - January 14-15, 2022 (Fri-Sat)";
+        var day2 = document.getElementById("day2");
+        day2.innerHTML = "Day 2 - January 15-16, 2022 (Sat-Sun)";
+        header.style.backgroundColor = "#694453";
     }
-    var timetext = document.getElementById("timetext");
-    timetext.innerHTML = "(US, Colorado)";
-    var day1 = document.getElementById("day1");
-    day1.innerHTML = "Day 1 - January 14-15, 2022 (Fri-Sat)";
-    var day2 = document.getElementById("day2");
-    day2.innerHTML = "Day 2 - January 15-16, 2022 (Sat-Sun)";
-    header.style.backgroundColor = "#694453";
 }
-

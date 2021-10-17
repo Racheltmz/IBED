@@ -17,6 +17,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -80,19 +85,38 @@
         <div class="container" id="content">
             <div class="col-md-12">
                 <h1 class="align-middle" id="title"><span class="mr-3">Event Schedule</span>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons" id="timeButtons">
-                        <label class="btn btn-secondary active" id="SGl">
+                    <div class="btn-group btn-group-toggle timeButtons" data-toggle="buttons" id="bigScreen">
+                        <label class="btn btn-secondary active SGl">
                             <input type="radio" name="options" id="SG" autocomplete="off" checked> Malaysia
                         </label>
-                        <label class="btn btn-secondary" id="IDl">
+                        <label class="btn btn-secondary IDl">
                             <input type="radio" name="options" id="ID" autocomplete="off"> India
                         </label>
-                        <label class="btn btn-secondary" id="LNl">
+                        <label class="btn btn-secondary LNl">
                             <input type="radio" name="options" id="LN" autocomplete="off"> United Kingdom
                         </label>
-                        <label class="btn btn-secondary" id="USl">
+                        <label class="btn btn-secondary USl">
                             <input type="radio" name="options" id="US" autocomplete="off"> USA (GMT-0600)
                         </label>
+                    </div>
+
+                    <div id="smallScreen">
+                        <div class="btn-group btn-group-toggle timeButtons" data-toggle="buttons">
+                            <label class="btn btn-secondary active SGl">
+                                <input type="radio" name="options" id="SG" autocomplete="off" checked> Malaysia
+                            </label>
+                            <label class="btn btn-secondary IDl">
+                                <input type="radio" name="options" id="ID" autocomplete="off"> India
+                            </label>
+                        </div>
+                        <div class="btn-group btn-group-toggle timeButtons" data-toggle="buttons">
+                            <label class="btn btn-secondary LNl">
+                                <input type="radio" name="options" id="LN" autocomplete="off"> United Kingdom
+                            </label>
+                            <label class="btn btn-secondary USl">
+                                <input type="radio" name="options" id="US" autocomplete="off"> USA (GMT-0600)
+                            </label>
+                        </div>
                     </div>
                 </h1>
 
@@ -126,7 +150,9 @@
                                         <strong>Muslim Speaker</strong>: Professor Datuk Dr Azizan bt Baharudin<br />
                                         <strong>Buddhist Speaker</strong>: Ven K.L. Dr Dhammajothi
                                     </p>
-                                    <a class="linkBox" href="./rec1.html">Watch Recording</a>
+                                    <a class="linkBox disable" href="./rec1.html" data-toggle="tooltip"
+                                        title="Recordings will be available after the event"
+                                        onclick="return false;">Watch Recording</a>
                                 </td>
                             </tr>
                             <tr>
@@ -137,7 +163,9 @@
                                     <p>
                                         <u>Keynote Address by HH the Dalai Lama</u>
                                     </p>
-                                    <a class="linkBox">Watch Recording</a>
+                                    <a class="linkBox disable" href="./rec1.html" data-toggle="tooltip"
+                                        title="Recordings will be available after the event"
+                                        onclick="return false;">Watch Recording</a>
                                 </td>
                             </tr>
                             <tr>
@@ -154,7 +182,9 @@
                                         <strong>Muslim Speaker</strong>: Emeritus Professor Osman Bakar <br />
                                         <strong>Buddhist Speaker</strong>: Ven Dr Bhikkhuni Dhammananda
                                     </p>
-                                    <a class="linkBox">Watch Recording</a>
+                                    <a class="linkBox disable" href="./rec1.html" data-toggle="tooltip"
+                                        title="Recordings will be available after the event"
+                                        onclick="return false;">Watch Recording</a>
                                 </td>
                             </tr>
                             <tr>
@@ -171,7 +201,9 @@
                                         <strong>Muslim Speaker</strong>: Syed Jamaluddin<br />
                                         <strong>Buddhist Speaker</strong>: Ven Geshe Tashi Tsering
                                     </p>
-                                    <a class="linkBox">Watch Recording</a>
+                                    <a class="linkBox disable" href="./rec1.html" data-toggle="tooltip"
+                                        title="Recordings will be available after the event"
+                                        onclick="return false;">Watch Recording</a>
                                 </td>
                             </tr>
                             <tr>
@@ -191,7 +223,9 @@
                                         <strong>Muslim Speaker</strong>: Associate Professor Dr Imtiyaz Yusuf<br />
                                         <strong>Buddhist Speaker</strong>: Dr David Loy
                                     </p>
-                                    <a class="linkBox">Watch Recording</a>
+                                    <a class="linkBox disable" href="./rec1.html" data-toggle="tooltip"
+                                        title="Recordings will be available after the event"
+                                        onclick="return false;">Watch Recording</a>
                                 </td>
                             </tr>
                             <tr>
@@ -208,7 +242,9 @@
                                         <strong>Muslim Speaker</strong>: Muhammad Faisal Abdul Aziz<br />
                                         <strong>Buddhist Speaker</strong>: Asst. Professor Ven Dr Karma Tashi Choedron
                                     </p>
-                                    <a class="linkBox">Watch Recording</a>
+                                    <a class="linkBox disable" href="./rec1.html" data-toggle="tooltip"
+                                        title="Recordings will be available after the event"
+                                        onclick="return false;">Watch Recording</a>
                                 </td>
                             </tr>
                             <tr>
@@ -225,7 +261,9 @@
                                         <strong>Muslim Speaker</strong>: Professor Nor Faridah Abdul Manaf<br />
                                         <strong>Buddhist Speaker</strong>: Professor Dr Rey Sheng Her
                                     </p>
-                                    <a class="linkBox">Watch Recording</a>
+                                    <a class="linkBox disable" href="./rec1.html" data-toggle="tooltip"
+                                        title="Recordings will be available after the event"
+                                        onclick="return false;">Watch Recording</a>
                                 </td>
                             </tr>
                             <tr>
@@ -236,7 +274,9 @@
                                     <p>
                                         <u>Keynote Address by Dr Reza Shah Kazemi</u>
                                     </p>
-                                    <a class="linkBox">Watch Recording</a>
+                                    <a class="linkBox disable" href="./rec1.html" data-toggle="tooltip"
+                                        title="Recordings will be available after the event"
+                                        onclick="return false;">Watch Recording</a>
                                 </td>
                             </tr>
                         </tbody>
