@@ -18,6 +18,10 @@ body {
     color: #94112C;
 }
 
+span.navbar-org {
+    font-family: 'Merriweather';
+}
+
 .navbar .nav-link {
     text-transform: uppercase;
     font-weight: 600;
@@ -158,8 +162,8 @@ a.disable {
 }
 
 /* Galaxy Fold Screen */
-@media (max-width: 280px) {
+@media (max-width: 325px) {
     .navbar span.navbar-org {
-        font-size: 16px;
+        font-size: 14px;
     }    
 }
