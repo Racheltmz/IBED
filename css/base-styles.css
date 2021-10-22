@@ -161,9 +161,17 @@ a.disable {
 
 }
 
+
 /* Galaxy Fold Screen */
 @media (max-width: 325px) {
     .navbar span.navbar-org {
         font-size: 14px;
     }    
+}
+
+/* Ipad Pro */
+@media (min-width: 993px) and (max-width: 1030px) {
+    .navbar span.navbar-org {
+        font-size: 17px;
+    } 
 }
