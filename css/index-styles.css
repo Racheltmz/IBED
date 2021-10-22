@@ -160,6 +160,11 @@ article#conference_synopsis img {
 
 /* Schedule Styles */
 
+#schedule_img {
+    display: flex;
+    justify-content: center;
+}
+
 #schedule {
     text-align: center;
 }
