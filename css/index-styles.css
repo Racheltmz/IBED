@@ -47,6 +47,12 @@ hr {
     border: 0;
 }
 
+#conference_header {
+    font-family: 'Merriweather';
+    font-weight: bold;
+    color: #94112C;
+}
+
 /* Sign up Styles */
 
 .sign_up_button.shaker {
@@ -160,6 +166,11 @@ article#conference_synopsis img {
 
 /* Schedule Styles */
 
+#schedule_img {
+    display: flex;
+    justify-content: center;
+}
+
 #schedule {
     text-align: center;
 }
@@ -260,6 +271,10 @@ article#conference_synopsis img {
 
 /* Event Partner Styles */
 
+#event_partners {
+    padding: 3rem;
+}
+
 #partner_imgs div {
     text-align: center;
 }
@@ -267,9 +282,13 @@ article#conference_synopsis img {
 #partner_imgs img {
     display: inline-block;
     margin: 10px;
-    width: 240px;
+    width: 180px;
     height: auto;
 }
+
+#partner_imgs img.wide {
+    width: 240px;
+} 
 
 /* Responsiveness */
 
@@ -314,10 +333,11 @@ article#conference_synopsis img {
     #introduction .left_content h1 {
         font-size: 46px;
     }
-    #partner_imgs img {
-        width: 180px;
-        height: auto;
+
+    #event_partners {
+        padding: 1.5rem;
     }
+
     hr {
         width: 150px;
     }
