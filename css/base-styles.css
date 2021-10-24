@@ -16,11 +16,9 @@ body {
     font-weight: 600;
     font-size: 20px;
     color: #94112C;
-}
-
-span.navbar-org {
     font-family: 'Merriweather';
 }
+
 
 .navbar .nav-link {
     text-transform: uppercase;
