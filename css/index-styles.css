@@ -248,8 +248,8 @@ article#conference_synopsis img {
     background-color: #3b5998;
 }
 
-#whatsapp {
-    background-color: #25d366;
+#gmail {
+    background-color: #ea4335;
 }
 
 #twitter {
@@ -265,7 +265,7 @@ article#conference_synopsis img {
     text-decoration: none;
 }
 
-#facebook:hover, #whatsapp:hover, #twitter:hover, #linkedin:hover {
+#facebook:hover, #gmail:hover, #twitter:hover, #linkedin:hover {
     background-color: black;
 }
 
