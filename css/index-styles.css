@@ -108,6 +108,7 @@ hr {
     transform: translateX(-400%);
     transition: 1s ease;
     animation-delay: 0.35s;
+    height: auto;
 }
 
 .section#second div.content {
@@ -119,6 +120,7 @@ hr {
     transform: translateX(400%);
     transition: 1s ease;
     animation-delay: 0.25s;
+    height: auto;
 }
 
 .section.show-me#first div.content, .section.show-me#second div.content, 

@@ -62,6 +62,7 @@ header h1 {
 }
 
 .speaker_section .header img {
+    height: auto;
     width: 100px;
     padding: 15px;
     background-color: #36302A;
@@ -84,6 +85,11 @@ hr {
 
 .cards {
     position: relative;
+    display:-webkit-flex;
+    display:-webkit-box;
+    display:-moz-flex;
+    display:-moz-box;
+    display:-ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
