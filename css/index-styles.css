@@ -104,10 +104,17 @@ hr {
     transition: 1s ease;
 }
 
-.section#first img {
+.section#first div.image {
     transform: translateX(-400%);
     transition: 1s ease;
     animation-delay: 0.35s;
+    display:-webkit-flex;
+    display:-webkit-box;
+    display:-moz-flex;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display: flex;
+    align-items: center;
 }
 
 .section#second div.content {
@@ -115,14 +122,23 @@ hr {
     transition: 1s ease;
 }
 
-.section#second img {
+.section#second div.image {
     transform: translateX(400%);
     transition: 1s ease;
     animation-delay: 0.25s;
+    display:-webkit-flex;
+    display:-webkit-box;
+    display:-moz-flex;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
 }
 
 .section.show-me#first div.content, .section.show-me#second div.content, 
-.section.show-me#first img, .section.show-me#second img {
+.section.show-me#first div.image, .section.show-me#second div.image {
     transform: none;
 }
 
@@ -135,9 +151,8 @@ hr {
     font-size: 18px;
 }
 
-article#conference_synopsis img {
-    position: relative;
-    z-index: 10;
+article#conference_synopsis img, article#brief_info img {
+    max-width: 100%;
 }
 
 /* Vertical Line */
@@ -295,6 +310,9 @@ article#conference_synopsis img {
 /* Small Computers Screen */
 
 @media (max-width: 992px) {
+    .section#second div.image {
+        display: none;
+    }
     .vl_left, .vl_right {
         border: none;
         text-align: left;
