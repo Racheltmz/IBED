@@ -21,8 +21,14 @@ function expand(selected) {
         }
 
         if (text.getAttribute('data-collapsed') != 'true') {
-            text.style.maxHeight = "200px";
-            text.style.transition = "max-height 0.25s ease-out";
+            if (window.innerWidth <= 400) {
+                text.style.maxHeight = "400px";
+                text.style.transition = "max-height 0.35s ease-out";
+                console.log("hi")
+            } else {
+                text.style.maxHeight = "200px";
+                text.style.transition = "max-height 0.25s ease-out";
+            }
             text.style.marginBottom = "1rem";
             text.setAttribute('data-collapsed', 'true');
             arrow.classList.add('flip');
