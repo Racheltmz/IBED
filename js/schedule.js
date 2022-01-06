@@ -86,12 +86,18 @@ function change(time, difference) {
     for (i = 0; i < time.length; i++) {
         var diffed = time[i].map(function (x) {
             changedTime = x - difference;
-            if (changedTime > 780) {
-                changedTime = changedTime - 720;
-                changedTime += 1;
+            if (changedTime >= 720) {
+                if (changedTime < 780) {
+                    changedTime += 1;
+                } else {
+                    changedTime = changedTime - 720;
+                    changedTime += 1;
+                }
             } else if (changedTime < 0) {
                 changedTime = 720 + changedTime;
                 changedTime += 1;
+            } else if (changedTime >= 0 && changedTime < 60) {
+                changedTime += 720;
             }
             return changedTime;
         });
@@ -105,10 +111,10 @@ idTime = change(sgTime, 150);
 idText = convert(idTime);
 
 // Generating London time and text
-lnTime = change(sgTime, 420);
+lnTime = change(sgTime, 480);
 lnText = convert(lnTime);
 
-usTime = change(sgTime, 840);
+usTime = change(sgTime, 900);
 usText = convert(usTime);
 
 sgTime = change(sgTime, 0);
