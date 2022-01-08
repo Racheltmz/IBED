@@ -166,12 +166,12 @@ for (i = 0; i < US.length; i++) {
 var userDate = new Date();
 var userISO = Date.UTC(userDate.getUTCFullYear(), userDate.getUTCMonth(), userDate.getUTCDate(),
     userDate.getUTCHours(), userDate.getUTCMinutes(), userDate.getUTCSeconds());
-const fixedDate = Date.UTC(2021, 9, 16, 14, 30); //Change this number to change the time the video changes (It's in UTC format)
+const fixedDate = Date.UTC(2022, 0, 15, 1); //Change this number to change the time the video changes (It's in UTC format)
 
 
 if (userISO > fixedDate) {
     var intro = document.getElementById("intro_video");
-    var videoid = "ahR5I1QJHdE";
+    var videoid = "cy0L2dE6nwA";
     $("#intro_video iframe").remove();
     $('<iframe width="760" height="420" frameborder="0" allowfullscreen></iframe>')
         .attr("src", "http://www.youtube.com/embed/" + videoid)
