@@ -166,14 +166,35 @@ for (i = 0; i < US.length; i++) {
 var userDate = new Date();
 var userISO = Date.UTC(userDate.getUTCFullYear(), userDate.getUTCMonth(), userDate.getUTCDate(),
     userDate.getUTCHours(), userDate.getUTCMinutes(), userDate.getUTCSeconds());
-const fixedDate = Date.UTC(2022, 0, 15, 1); //Change this number to change the time the video changes (It's in UTC format)
+const HHSession = Date.UTC(2022, 0, 15, 3); //Change this number to change the time the video changes (It's in UTC format)
+const Session2 = Date.UTC(2022, 0, 15, 5, 30);
+const Session3 = Date.UTC(2022, 0, 15, 7, 55);
+const Session4 = Date.UTC(2022, 0, 16, 0, 30);
+const Session5 = Date.UTC(2022, 0, 16, 2, 55);
+const RZSession = Date.UTC(2022, 0, 16, 7, 30);
+Times = [HHSession, Session2, Session3, Session4, Session5, RZSession];
+Links = ["cy0L2dE6nwA", "NY7gyPUVDi8", "t0QEk7XEFnU", "g_yZv8AZ_40", "JCzkojnrvD4", "EgWmADDGp60"]
 
-
-if (userISO > fixedDate) {
-    var intro = document.getElementById("intro_video");
-    var videoid = "cy0L2dE6nwA";
-    $("#intro_video iframe").remove();
-    $('<iframe width="760" height="420" frameborder="0" allowfullscreen></iframe>')
-        .attr("src", "http://www.youtube.com/embed/" + videoid)
-        .appendTo("#intro_video");
+function changedStream(Time, link) {
+    if (userISO > Time) {
+        var videoid = link;
+        $("#intro_video iframe").remove();
+        $('<iframe width="760" height="420" frameborder="0" allowfullscreen></iframe>')
+            .attr("src", "http://www.youtube.com/embed/" + videoid)
+            .appendTo("#intro_video");
+    }
 }
+
+for (var i = 0; i < Times.length; i++) {
+    changedStream(Times[i], Links[i]);
+}
+
+
+// if (userISO > HHSession) {
+//     var intro = document.getElementById("intro_video");
+//     var videoid = "cy0L2dE6nwA";
+//     $("#intro_video iframe").remove();
+//     $('<iframe width="760" height="420" frameborder="0" allowfullscreen></iframe>')
+//         .attr("src", "http://www.youtube.com/embed/" + videoid)
+//         .appendTo("#intro_video");
+// }
