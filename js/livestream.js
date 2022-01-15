@@ -172,8 +172,8 @@ const Session3 = Date.UTC(2022, 0, 15, 7, 55);
 const Session4 = Date.UTC(2022, 0, 16, 0, 30);
 const Session5 = Date.UTC(2022, 0, 16, 2, 55);
 const RZSession = Date.UTC(2022, 0, 16, 7, 30);
-Times = [HHSession, Session2, Session3, Session4, Session5, RZSession];
-Links = ["cy0L2dE6nwA", "NY7gyPUVDi8", "t0QEk7XEFnU", "g_yZv8AZ_40", "JCzkojnrvD4", "EgWmADDGp60"]
+Times = [Session2, Session3, Session4, Session5, RZSession];
+Links = ["NY7gyPUVDi8", "t0QEk7XEFnU", "g_yZv8AZ_40", "JCzkojnrvD4", "EgWmADDGp60"]
 
 function changedStream(Time, link) {
     if (userISO > Time) {
