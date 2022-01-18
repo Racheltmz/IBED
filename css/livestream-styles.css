@@ -120,6 +120,11 @@ div.timeButtons label.btn.btn-secondary.USl {
     width: 50%;
 }
 
+a.link-primary {
+    color: blue;
+    text-decoration: underline;
+}
+
 /* Mobile Screen */
 @media (max-width: 576px) {
     #livestream iframe {
