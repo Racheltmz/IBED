@@ -125,6 +125,16 @@ a.link-primary {
     text-decoration: underline;
 }
 
+div.explain {
+    width: 760px;
+    height: 420px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
 /* Mobile Screen */
 @media (max-width: 576px) {
     #livestream iframe {
